@@ -1,0 +1,367 @@
+/* pages/detection/detectionShow.wxss */
+
+.body {
+  background: #f5f5f5;
+  float: left;
+  width: 100%;
+}
+
+/* 面部解析部分 */
+
+.face {
+  height: 450rpx;
+  width: 100%;
+  float: left;
+  margin-top: 20rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+
+.faceTitle {
+  height: 100rpx;
+  width: 100%;
+  float: left;
+  /* border:1rpx solid #EEEEEE;  */
+  font-size: 30rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  line-height: 100rpx;
+  text-indent: 21rpx;
+}
+
+.content {
+  height: 268rpx;
+  width: 85%;
+  float: left;
+  margin-left: 7.5%;
+}
+
+.left {
+  height: 100%;
+  width: 211rpx;
+  float: left;
+}
+
+.one {
+  width: 100%;
+  height: 20%;
+  float: left;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #666;
+  text-align: center;
+}
+
+.two {
+  width: 100%;
+  height: 10%;
+  float: left;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #666;
+  text-align: center;
+  bottom: 0rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.center {
+  height: 268rpx;
+  width: 172rpx;
+  float: left;
+}
+
+.center image {
+  height: 268rpx;
+  width: 172rpx;
+  float: left;
+}
+
+.right {
+  height: 100%;
+  width: 237rpx;
+  float: left;
+}
+
+/* 成因分析 */
+
+.analy {
+  width: 100%;
+  background: white;
+  float: left;
+}
+
+.analyImg {
+  width: 100%;
+  height: 120rpx;
+  float: left;
+
+}
+
+.show1 {
+  float: left;
+  margin-left: 20rpx;
+  width: 124rpx;
+  height: 121rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+}
+.show2 {
+  float: left;
+  margin-left: 20rpx;
+  width: 124rpx;
+  height: 121rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #CCCCCC;
+}
+
+.showImg {
+  height: 52rpx;
+  width: 52rpx;
+  float: left;
+  margin-left: 27%;
+  margin-top: 10%;
+}
+
+.showImg image {
+  height: 52rpx;
+  width: 52rpx;
+  float: left;
+}
+
+.showText1 {
+  width: 100%;
+  height: 20rpx;
+  font-size: 20rpx;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: #666;
+  text-align: center;
+  float: left;
+  margin-top: 10%;
+}
+
+.showText2 {
+  width: 100%;
+  height: 20rpx;
+  font-size: 20rpx;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  float: left;
+  margin-top: 10%;
+}
+
+/* 原图与分析图展示 */
+
+.showPicture {
+  height: 300rpx;
+  width: 100%;
+  float: left;
+}
+
+.pic {
+  height: 150rpx;
+  width: 120rpx;
+  float: left;
+  margin-left: 15%;
+  margin-top: 10%;
+  background: white;
+  margin-right: 18%;
+}
+
+.picImg {
+  height: 120rpx;
+  width: 120rpx;
+  float: left;
+}
+
+.picImg image {
+  height: 120rpx;
+  width: 120rpx;
+  float: left;
+}
+
+.picText {
+  width: 100%;
+  height: 20rpx;
+  margin-top: 7%;
+  float: left;
+  font-size: 20rpx;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+}
+
+/* 显示分数 */
+
+.grace {
+  height: 170rpx;
+  width: 100%;
+  float: left;
+}
+
+.infoText {
+  height: 50rpx;
+  /* width: 240rpx; */
+  float: left;
+  margin-left: 35%;
+  background: #ff5e69;
+  border-radius: 25rpx;
+  font-size: 20rpx;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: #fff;
+  line-height: 50rpx;
+  text-indent: 27rpx;
+}
+
+/* 进度条 */
+
+.jindu {
+  margin-top: 10rpx;
+  height: 40rpx;
+  width: 709rpx;
+  float: left;
+  margin-left: 3%;
+}
+
+.showJin {
+  height: 10rpx;
+  width: 709rpx;
+  float: left;
+  background: #f5f5f5;
+}
+
+.showDu {
+  float: left;
+  /* width:45% */
+  height: 10rpx;
+  background: #ff5e69;
+  border-radius: 5rpx;
+}
+
+.jinGrace {
+  height: 20rpx;
+  margin-top: 10rpx;
+  width: 10%;
+  float: left;
+  font-size: 20rpx;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: #999;
+  line-height: 20rpx;
+}
+
+.detail {
+  float: left;
+  margin-left: 3%;
+  width: 700rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 50rpx;
+}
+
+/* 你的肤质存在以下问题： */
+.scroll_box{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.scrollItem{
+  width: 25%;
+  display: inline-block;
+  margin-right: 22rpx;
+}
+
+
+
+.faceQue {
+  margin-top: 20rpx;
+  float: left;
+  width: 100%;
+  background: #fff;
+}
+
+.tetle {
+  height: 98rpx;
+  width: 100%;
+  float: left;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  line-height: 98rpx;
+  text-indent: 20rpx;
+}
+
+.tetle text {
+  font-size: 28rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #333;
+}
+
+.que {
+  height: 85rpx;
+  width: 100%;
+  float: left;
+   overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1rpx solid #eee;
+}
+.btn {
+  float: left; 
+   width: 180rpx;
+  height: 54rpx;
+   margin-left: 2%;
+}
+
+.btn1 {
+  float: left;
+  width: 180rpx;
+  height: 54rpx;
+  background: #fff;
+  box-shadow: 0rpx 0rpx 16rpx 0rpx rgba(0, 0, 0, 0.1);
+  border-radius: 27rpx;
+  border: 1rpx solid #f5f5f5;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  line-height: 54rpx;
+}
+.btn2 {
+  float: left;
+  margin-left: 2%;
+  width: 180rpx;
+  height: 54rpx;
+  background: #333333;
+  box-shadow: 0rpx 0rpx 16rpx 0rpx rgba(0, 0, 0, 0.1);
+  border-radius: 27rpx;
+  border: 1rpx solid #f5f5f5;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FEFEFE;
+  text-align: center;
+  line-height: 54rpx;
+}
+.message {
+  float: left;
+  margin-left: 3%;
+  width: 699rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #999;
+  line-height: 30rpx;
+  margin-bottom: 100rpx;
+}

@@ -1,0 +1,49 @@
+<!--pages/stores/storeDetail.wxml-->
+<view class='body'>
+  
+  
+  <!-- 走马灯 -->
+  <view class='storeImg'>
+    
+    <swiper indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="true" duration="{{duration}}" class='swiper-box' bindchange='onSlideChangeEnd'>
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="storeImg" width="355" height="150" />
+        </swiper-item>
+      </block>
+
+    </swiper>
+    <view class='show'>
+      <view class='molecule'>{{index}}</view>
+      <view class='denominator'>/{{imgUrls.length}}</view>
+    </view>
+  </view>
+
+  <!-- 门店介绍部分 -->
+  <view class='introduction'>
+    <view class='storeName'>{{info.store_name}}</view>
+    <view class='storeFunction'>{{info.store_keyword}}</view>
+    <view class='storeAddre'>{{info.store_address}}
+    </view>
+    <view class='introImg'>
+      <view class='tuImg' bindtap='local'>
+        <image src='../../images/store1.png'></image>
+      </view>
+      <view class='turImg' bindtap='call'>
+        <image src='../../images/store2.png'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 门店详情 -->
+  <view class='detail'>门店详情</view>
+  <view class='intro'>{{info.store_distro}}
+  </view>
+  <view class='footer'>
+    <view class='btn' bindtap='newStore'>查看
+      <view class='btnImg'>
+        <image src="{{isShow?'../../images/store3.png':'../../images/detail2.png'}}"></image>
+      </view>
+    </view>
+  </view>
+  
+</view>

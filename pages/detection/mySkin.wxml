@@ -1,0 +1,45 @@
+<!-- pages/detection/mySkin.wxml -->
+<view class='body'>
+  <view class='tetle'>最全肌肤测试</view>
+  <view class='detail'>{{titleShow}}</view>
+  <view class='test'>
+    <block wx:for="{{questionnaireList}}" wx:key="index">
+      <view wx:if="{{index==0}}" data-currentid='{{index}}' bindtap='detectionTest' class='testOne'>
+        <view wx:if="{{testDate==''}}" class='testText'>{{item.que_title}}</view>
+        <view wx:if="{{testDate!=''}}" class='testText'>
+          <text>肤质为：</text>
+          {{item.result}}
+        </view>
+        <view wx:if="{{testDate==''}}" class='intoTest'>{{showTitle1}}</view>
+        <view wx:if="{{testDate!=''}}" class='intoTest'>{{showTitle2}}</view>
+      </view>
+      <view wx:if="{{index==1}}" data-currentid='{{index}}' bindtap='detectionTest' class='testTwo'>
+        <view wx:if="{{testDate==''}}" class='testText'>{{item.que_title}}</view>
+        <view wx:if="{{testDate!=''}}" class='testText'>
+          <text>肤质为：</text>
+          {{item.result}}
+        </view>
+        <view wx:if="{{testDate==''}}" class='intoTest'>{{showTitle1}}</view>
+        <view wx:if="{{testDate!=''}}" class='intoTest'>{{showTitle2}}</view>
+      </view>
+      <view wx:if="{{index==2}}" data-currentid='{{index}}' bindtap='detectionTest' class='testThree'>
+        <view wx:if="{{testDate==''}}" class='testText'>{{item.que_title}}</view>
+        <view wx:if="{{testDate!=''}}" class='testText'>
+          <text>肤质为：</text>
+          {{item.result}}
+        </view>
+        <view wx:if="{{testDate==''}}" class='intoTest'>{{showTitle1}}</view>
+        <view wx:if="{{testDate!=''}}" class='intoTest'>{{showTitle2}}</view>
+      </view>
+      <view wx:if="{{index==3}}" data-currentid='{{index}}' bindtap='detectionTest' class='testFour'>
+        <view wx:if="{{testDate==''}}" class='testText'>{{item.que_title}}</view>
+        <view wx:if="{{testDate!=''}}" class='testText'>
+          <text>肤质为：</text>
+          {{item.result}}
+        </view>
+        <view wx:if="{{testDate==''}}" class='intoTest'>{{showTitle1}}</view>
+        <view wx:if="{{testDate!=''}}" class='intoTest'>{{showTitle2}}</view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,54 @@
+<!--pages/mine/memberCenters.wxml-->
+
+<view class='body'>
+  <!-- 头部会员信息 -->
+  <view class='top'>
+    <view class='header'>
+      <view class='headerBg'>
+        <view class='headerInfo'>
+          <view class='headerInfoOne'>
+            <image src='{{user_avatar}}'></image>
+          </view>
+          <view class='headerInfoText'>{{user_name}}</view>
+          <view class='headerGrade'>
+            <image src='../../images/member.png'></image>
+            <text>(ID:{{user_id}}  )  V{{user_vip_level}}</text>
+          </view>
+         
+          <button class='headerGradeBtn' bindtap='share' open-type='share'>邀请</button>
+        </view>
+        <!-- 进度条 -->
+        <view class='progressBar'>
+          <view class='bar'>
+            <view class='textOne'>V{{user_vip_level}}</view>
+            <view class='barOne'></view>
+            <view class='textOne'>V{{next_vip_level}}</view>
+            <view class='textTwo'>消费额 {{consume_money}}/{{need_consume_money}}</view>
+          </view>
+          <view class='bar'>
+            <view class='textOne'>V{{user_vip_level}}</view>
+            <view class='barOne'></view>
+            <view class='textOne'>V{{next_vip_level}}</view>
+            <view class='textTwo'>邀请人 {{user_invite_count}}/{{need_invite_num}}</view>
+          </view>
+        </view>
+        <!-- <image src='../../images/bg3.png'></image> -->
+      </view>
+    </view>
+  </view>
+  <!-- 享受优惠信息部分 -->
+  <view class='discount'>
+    <view class='discountImg'>
+      <image src='../../images/member.png'></image>
+    </view>
+    <view wx:if="{{user_vip_discount==1}}" class='discountText'>您当前无折扣优惠</view>
+    <view wx:else class='discountText'>您当前享受{{user_vip_discount*10}}折优惠</view>
+  </view>
+  <!-- 会员说明部分 -->
+  <view class='member'>
+    <view class='memberTitle'>会员说明</view>
+    <block wx:for="{{explain}}" wx:key="index">
+      <view class='memberDetail'>V{{item.level}}：消费{{item.consume_money}}金额或者邀请{{item.invited_num}}人可成为V{{item.level}}享受{{item.percent}}折优惠。</view>
+    </block>
+  </view>
+</view>

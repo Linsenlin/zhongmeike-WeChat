@@ -1,0 +1,302 @@
+/**首页样式**/
+
+/* 搜索框 */
+
+.index-contain {
+  margin-bottom: 35rpx;
+}
+
+.search {
+  position: relative;
+  background-color: #f4f4f4;
+  height: 128rpx;
+  padding: 32rpx 0;
+  box-sizing: border-box;
+}
+
+.searchicon {
+  position: absolute;
+  margin: 20rpx 0 20rpx 40rpx;
+}
+
+.search-input {
+  width: 710rpx;
+  height: 66rpx;
+  background-color: #fff;
+  border: solid 2rpx #d0d0d0;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  color: #c8c8c8;
+  font-size: 28rpx;
+  padding-left: 66rpx;
+  box-sizing: border-box;
+  line-height: 66rpx;
+}
+
+/* 轮播 */
+
+swiper {
+  height: 400rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: -10rpx;
+}
+
+.swiper-box .wx-swiper-dot {
+  width: 40rpx;
+  display: inline-flex;
+  height: 6rpx;
+  margin-left: 20rpx;
+  justify-content: space-between;
+}
+
+.swiper-box .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+  background: #ccc;
+  border-radius: 6rpx;
+}
+
+.swiper-box .wx-swiper-dot-active::before {
+  background: #fff;
+}
+
+/* 品牌退货换货 */
+
+.brandReturnexchange {
+  width: 100%;
+  height: 142rpx;
+  padding: 36rpx 80rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.brImg {
+  /* float: left; */
+  /* width: 100%;
+  height: 100%; */
+  width: 39rpx;
+  height: 34rpx;
+  /* background: white */
+}
+
+.brText {
+  color: #333;
+  font-size: 20rpx;
+  font-weight: 400;
+}
+
+/* 最具人气品牌产品 */
+
+.popularPro {
+  width: 100%;
+  height: 438rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.leftImg {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: lightblue
+}
+
+.rightImg {
+  height: 100%;
+  width: 48%;
+  float: left;
+  background: lightsalmon
+}
+
+.pro {
+  width: 100%;
+  float: left;
+}
+
+.ppLeft {
+  float: left;
+  width: 50%;
+  height: 438rpx;
+}
+
+.plImg {
+  float: left;
+  width: 100%;
+  height: 438rpx;
+}
+
+.ppRight {
+  float: right;
+  width: 48.5%;
+  height: 438rpx;
+}
+
+.prImg01 {
+  float: right;
+  width: 100%;
+  height: 215rpx;
+}
+
+.prImg02 {
+  margin-top: 2%;
+  float: right;
+  width: 100%;
+  height: 215rpx;
+}
+
+/* 每周分享 */
+
+.shareWeekly {
+  width: 100%;
+  margin: 68rpx 0 60rpx 0;
+}
+
+.swTitle {
+  width: 100%;
+  height: 46rpx;
+  line-height: 46rpx;
+  border-left: #333 solid 10rpx;
+  color: #333;
+  font-size: 34rpx;
+  font-weight: 500;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.swArticles {
+  margin-top: 28rpx;
+  border-bottom: #eee solid 2rpx;
+}
+
+.saImg {
+  width: 100%;
+  height: 300rpx;
+}
+
+.saDes {
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  margin: 30rpx 0 40rpx 0;
+}
+
+.sdTitle {
+  color: #040000;
+  font-weight: 400;
+  font-size: 28rpx;
+}
+
+.sdText {
+  color: #999;
+  font-weight: 500;
+  font-size: 23rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 16rpx 0 10rpx 0;
+}
+
+.sdscanTime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scanImg {
+  width: 30rpx;
+  height: 20rpx;
+  /* vertical-align: middle; */
+  margin-top: 10rpx;
+}
+
+.timeImg {
+  width: 22rpx;
+  height: 22rpx;
+  /* vertical-align: middle;  */
+  margin-top: 10rpx;
+}
+
+.stText {
+  margin: 0 0 0 11rpx;
+  color: #333;
+  font-size: 22rpx;
+  font-weight: 400;
+  vertical-align: 3rpx;
+}
+
+/* 精选产品 */
+
+.featuredPro {
+  width: 100%;
+  margin-bottom: 100rpx;
+}
+
+.fpHead {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42rpx;
+}
+
+.fhTitle {
+  height: 46rpx;
+  line-height: 46rpx;
+  border-left: #333 solid 10rpx;
+  color: #333;
+  font-size: 36rpx;
+  font-weight: 400;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.fhMore {
+  margin-right: 20rpx;
+  color: #333;
+  font-size: 20rpx;
+  font-weight: 400;
+}
+
+.fmImg {
+  width: 10rpx;
+  height: 16rpx;
+}
+
+.scroll_box {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrollItem {
+  width: 53%;
+  /* margin: 0 auto; */
+  display: inline-block;
+  margin-right: 22rpx;
+}
+
+.siImg {
+  width: 100%;
+  height: 480rpx;
+  border-radius: 8rpx;
+  margin-bottom: 32rpx;
+}
+
+.siName {
+  margin: 0 auto;
+  width: 75%;
+  height: 60rpx;
+  background-color: #333;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #fff;
+  font-size: 24rpx;
+  font-weight: 400;
+}

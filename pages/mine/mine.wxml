@@ -1,0 +1,92 @@
+<!-- 我的 -->
+
+<view class='content'>
+  <view class='bg'>
+    <view class='top'>
+      <image src='{{user_avatar}}' class='avatar'></image>
+      <view class='info'>
+        <view class='name'>{{user_name}}</view>
+        <view class='mobile'>{{user_phone}}</view>
+      </view>
+      <text class='level' decode='{{true}}'>&nbsp;&nbsp;V{{user_vip_level}}&nbsp;&nbsp;  </text>
+      <view class='grow'>
+        <view class='growLeft'>我的成长值{{user_award_worth}}</view>
+        <view class='growRight' bindtap='spe'>查看特权
+          <image src='../../images/gogo.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 我的订单部分 -->
+  <view class='order'>我的订单</view>
+   <view class='line'></view>
+  <view class='orderList'>
+    <view class='orderChoose' bindtap='waitPay'>
+      <view class='img'>
+        <image src='../../images/waitpay.png'></image>
+      </view>
+      <view class='imgText'>待付款</view>
+    </view>
+    <view class='orderChoose' bindtap='waitFaHuo'>
+      <view class='img'>
+        <image src='../../images/waitsend.png'></image>
+      </view>
+      <view class='imgText'>待发货</view>
+    </view>
+    <view class='orderChoose' bindtap='waitShouHuo'>
+      <view class='img'>
+        <image src='../../images/waitget.png'></image>
+      </view>
+      <view class='imgText'>待收货</view>
+    </view>
+    <view class='orderChoose' bindtap='rebacklist'>
+      <view class='img'>
+        <image src='../../images/reback.png' style=' width: 57rpx; height: 51rpx;' mode='aspectFit'></image>
+      </view>
+      <view class='imgText'>退货</view>
+    </view>
+  </view>
+
+  <!-- 功能部分 -->
+  <view class='func'>
+    <view class='orderChoose' bindtap='myAddressList'>
+      <view class='imgOne'>
+        <image src='../../images/address.png' style=' width: 32rpx; height: 36rpx;' mode='aspectFit'></image>
+      </view>
+      <view class='imgText'>收货地址</view>
+    </view>
+    <view class='orderChoose' bindtap='memberCenters'>
+      <view class='imgOne'>
+        <image src='../../images/vip.png' style=' width: 37rpx; height: 33rpx;' mode='aspectFit'></image>
+      </view>
+      <view class='imgText'>我的会员</view>
+    </view>
+    <view class='orderChoose' bindtap='aboutProcess'>
+      <view class='imgOne'>
+        <image src='../../images/circle.png' style=' width: 35rpx; height: 34rpx;' mode='aspectFit'></image>
+      </view>
+      <view class='imgText'>流程说明</view>
+    </view>
+    <view class='orderChoose' bindtap='aboutUs'>
+      <view class='imgOne'>
+        <image src='../../images/about.png' style=' width: 36rpx; height: 36rpx;' mode='aspectFit'></image>
+      </view>
+      <view class='imgText'>关于我们</view>
+    </view>
+    
+    <!-- <view class='orderChoose' bindtap='myDistribution'>
+      <view class='imgOne'>
+        <image src='../../images/sale.png' style=' width: 36rpx; height: 39rpx;' mode='aspectFit'></image>
+      </view>
+      <view class='imgText'>我的分销</view>
+    </view> -->
+  </view>
+  <view class='funcT'>
+  <view class='orderChooseO' bindtap='myDistribution'>
+      <view class='imgOne'>
+        <image src='../../images/sale.png' style=' width: 36rpx; height: 39rpx;' mode='aspectFit'></image>
+      </view>
+      <view class='imgText'>我的分销</view>
+    </view>
+    </view>
+</view>

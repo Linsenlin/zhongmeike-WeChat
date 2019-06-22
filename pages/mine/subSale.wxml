@@ -1,0 +1,17 @@
+<!--pages/mine/subSale.wxml-->
+<view class='content'>
+  <view  class='topbg'>{{tip}}</view>
+  <!-- <view wx:else class='topbg'></view> -->
+  <view class='center'>
+    <view class='title'>开通分销:</view>
+    <view class='price'>￥{{threshold_consume}}元</view>
+    <view class='line'></view>
+    <view class='withdrawl_way_buttom' bindtap='choose'>
+      <text> 微信</text>
+      <view class="{{showView?'withdrawl_way_buttom1':'withdrawl_way_buttom2'}}">
+        <image src='../../images/choose.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class="{{showView?'butto2':'butto'}}" bindtap='myDistribution'>确认付款</view>
+</view>

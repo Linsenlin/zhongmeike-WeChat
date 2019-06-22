@@ -1,0 +1,85 @@
+<wxs module="tutil" src="../mine/time.wxs"></wxs>
+<!-- 首页 -->
+<view class='index-contain'>
+  <!-- 搜索框 -->
+  <view class='search' bindtap='searches'>
+    <icon type="search" size='30rpx' color='#c8c8c8' class='searchicon' />
+    <view class='search-input'>搜索</view>
+  </view>
+  <!-- 轮播 -->
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper-box'>
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.banner_xcx_img}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 品牌退货换货 -->
+  <view class='brandReturnexchange'>
+    <view wx:for="{{brandsReturn}}" wx:key="{{index}}">
+      <image src='{{item.imgUrl}}' alt='' class='brImg' style=' {{wh}}' mode='aspectFit'></image>
+      <view class='brText'>{{item.text}}</view>
+    </view>
+  </view>
+  <!-- 最具人气品牌产品 -->
+  <view class='popularPro'>
+    <view class='pro'>
+      <view class='ppLeft'>
+        <navigator url="../sort/sort">
+          <image src="{{propagate_img1}}" alt='人气产品' class='plImg'></image>
+        </navigator>
+      </view>
+      <view class='ppRight' wx:if="{{index!=0}}">
+        <navigator url="../stores/storeList">
+          <image src='{{propagate_img2}}' alt='体验店' class='prImg01'></image>
+        </navigator>
+        <navigator url="../customization/customization" openType='switchTab'>
+          <image src='{{propagate_img3}}' alt='专属定制' class='prImg02'></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 每周分享 -->
+  <view class='shareWeekly'>
+    <view class='swTitle'>每周分享</view>
+    <view class='swArticles' wx:for="{{shareweeklyInfo}}" wx:key="{{index}}">
+      <view bindtap='shareweeklyInfo' data-currentid='{{index}}'>
+        <image src='{{item.article_face_image}}' alt='' class='saImg'></image>
+        <view class='saDes'>
+          <view class='sdTitle'>{{item.article_title}}</view>
+          <view class='sdText'>{{item.article_distro}}</view>
+          <view class='sdscanTime'>
+            <view class='stScan'>
+              <image class='scanImg' src='../../images/look.png' alt='' mode='aspectFit'></image>
+              <text class='stText'>{{item.article_read_count}}</text>
+            </view>
+            <view class='stTime'>
+              <image class='timeImg' src='../../images/time.png' alt='' mode='aspectFit'></image>
+              <text class='stText'>{{tutil.formatTimes(item.article_create_time)}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 精选产品 -->
+  <view class='featuredPro'>
+    <view class='fpHead'>
+      <view class='fhTitle'>精选产品</view>
+      <navigator url="../sort/sort" class='fhMore'>
+        更多
+        <image src='../../images/next.png' alt='' class='fmImg'></image>
+      </navigator>
+    </view>
+    <view class='scroll_box'>
+      <scroll-view class="scroll-view" scroll-x style="width: auto;overflow:hidden;">
+        <view class='svNavi'>
+          <view id="green" class="scrollItem" wx:for="{{featuredproInfo}}" wx:key="{{index}}" data-currentid='{{index}}' bindtap='checkType'>
+            <image src='{{item.goods_thumb_image}}' alt='' class='siImg'></image>
+            <view class='siName'>{{item.goods_name}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

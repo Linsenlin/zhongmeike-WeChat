@@ -1,0 +1,205 @@
+/* pages/mine/orderDetail.wxss */
+page{
+  background-color: #f5f5f5;
+}
+.content {
+  background: #f5f5f5;
+  margin-bottom: 60rpx;
+}
+.img {
+  width: 142rpx;
+  height: 126rpx;
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.procenter {
+  height: 126rpx;
+  text-align: left;
+  width: 50%;
+  float: left;
+  margin-left: 25rpx;
+  margin-top: 30rpx;
+}
+.protitle {
+  color: #333333;
+  font-size: 28rpx;
+}
+.proclass {
+  color: #999999;
+  font-size: 24rpx;
+}
+.proright {
+  float: right;
+  height: 126rpx;
+  width: 12%;
+  margin-top: 30rpx;
+  margin-right: 20rpx;
+}
+.count {
+  color: #333333;
+  font-size: 24rpx;
+  /* margin-right: 20rpx; */
+  text-align: right;
+  float: right
+}
+.price {
+  font-size: 28rpx;
+  color: #333333;
+  margin-top: 40rpx;
+  float: right;
+}
+.ordercenter {
+  width: 100%;
+  height: 182rpx;
+  background: #ffffff;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.spec {
+  width: 100%;
+  height: 98rpx;
+  background: #ffffff;
+  margin-top: 20rpx;
+}
+
+.spec1 {
+  width: 100%;
+  height: 98rpx;
+  background: #ffffff;
+}
+.other {
+  width: 100%;
+  height: 98rpx;
+  background: #ffffff;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+.goodstitle {
+  font-size: 34rpx;
+ font-family:SourceHanSansSC-Medium;
+font-weight:500;
+color:#333333;
+  margin-top: 34rpx;
+  margin-left: 22rpx;
+  float: left;
+} 
+.goodstitle1 {
+  font-size: 34rpx;
+  font-weight: 500;
+  margin-left: 22rpx;
+  float: left;
+} 
+.otherprice {
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 34rpx;
+  margin-right: 22rpx;
+  float: right;
+}
+.rebackprice {
+  color: #999999;
+  font-size: 24rpx;
+  float: left;
+  margin-left: 35rpx;
+  margin-top: 40rpx;
+  font-weight:500;
+}
+.rebackprice1 {
+  color: #19B0E8;
+  font-size: 24rpx;
+  float: left;
+  margin-left: 35rpx;
+  margin-top: 40rpx;
+  font-weight:500;
+}
+
+.des {
+  color: #999999;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  margin-left: 22rpx;
+}
+.chooseup {
+  color: #999999;
+  font-size: 34rpx;
+  float: left;
+  margin-left: 15rpx;
+  margin-top: 34rpx;
+}
+.photo {
+  width: 100%;
+  height: 276rpx;
+  background: #ffffff;
+  margin-top: 20rpx;
+}
+.uptitle {
+  color: #333333;
+  font-size: 34rpx;
+  padding-top: 34rpx;
+  margin-left: 22rpx;
+  font-weight: 500;
+  width: 100%;
+}
+.imgview {
+  border-style: dashed;
+  border-width: 2rpx;
+  width: 160rpx;
+  height: 160rpx;
+  margin-left: 24rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  float: left;
+}
+.photoimg {
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.apply {
+  width: 100%;
+  height: 110rpx;
+  background: #333333;
+}
+.applytitle {
+  font-size: 28rpx;
+  color: #ffffff;
+  padding-top: 20rpx;
+  margin-left: 24rpx;
+}
+.detailtitle {
+  font-size: 20rpx;
+  color: #ffffff;
+  margin-left: 24rpx;
+  margin-top: 10rpx;
+}
+.contact {
+  width: 100%;
+  height: 120rpx;
+  background: #ffffff;
+}
+.nameview {
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%
+}
+.name {
+  font-size: 28rpx;
+  color: #333333;
+  margin-left: 20rpx;
+  width: 35%;
+}
+.phone {
+  width: 60%;
+  font-size: 28rpx;
+  color: #333333;
+  margin-left: 30rpx;
+}
+.adderss {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #999999;
+  margin-top: 10rpx;
+}

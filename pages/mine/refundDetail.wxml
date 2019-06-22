@@ -1,0 +1,52 @@
+<!--pages/mine/refundDetail.wxml-->
+<view class='content'>
+  <view class='apply'>
+    <view class='apply1'>
+      <view class='applytitle'>{{failRefund}}</view>
+      <view class='detailtitle'>{{failReason}}</view>
+    </view>
+    <view class='line'></view>
+    <view class='info_detail'>
+      <view class='detail_title1'>{{refund}}</view>
+      <view class='detail_title2'>{{refundShow}}</view>
+    </view>
+  </view>
+
+  <view class='ordercenter'>
+    <image class='img' src='{{order_img_url}}'></image>
+    <view class='procenter'>
+      <view class='protitle'>{{order_label}}</view>
+      <view class='proclass'>{{order_title}}</view>
+    </view>
+    <view class='proright'>
+      <view class='count'>x{{goods_count}}</view>
+      <view class='price'>¥{{order_price}}</view>
+    </view>
+  </view>
+  <view class='spec'>
+    <view class='goodstitle'>货物状态</view>
+    <view class='selec'>{{order_status}}</view>
+  </view>
+  <view class='spec'>
+    <view class='goodstitle'>退货原因</view>
+    <view class='selec'>{{order_reason}}</view>
+  </view>
+  <view class='spec'>
+    <view class='goodstitle'>退款金额:</view>
+    <view class='rebackprice'>¥{{order_price}}</view>
+  </view>
+  <view class='des'>最多￥{{order_price+freight}} 含运费￥{{freight}}</view>
+  <view class='spec'>
+    <view class='goodstitle'>退款说明:</view>
+    <view class='chooseup'>{{order_desc}}</view>
+  </view>
+  <view class='line'></view>
+  <view class='photo'>
+    <view class='uptitle'>上传凭证</view>
+    <block wx:for="{{order_image}}" wx:key="index">
+      <view class='imgview'>
+        <image src='{{item}}' class='photoimg'></image>
+      </view>
+    </block>
+  </view>
+</view>

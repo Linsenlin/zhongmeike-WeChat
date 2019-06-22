@@ -1,0 +1,49 @@
+<!--pages/mine/myFenXiao_myTeam.wxml-->
+<wxs module="tutil" src="time.wxs"></wxs>
+<view class='header'>
+  <block wx:for="{{titles}}" wx:key="index">
+
+    <view wx:if="{{index==0}}" data-currentid='{{index}}' bindtap='checkType' class="{{currentIndex==index?'headerTitle1':'headerTitle2'}}">
+      {{item}}({{user_second_teams}})
+    </view>
+    <view wx:if="{{index==1}}" data-currentid='{{index}}' bindtap='checkType' class="{{currentIndex==index?'headerTitle1':'headerTitle2'}}">
+      {{item}}({{user_third_teams}})
+    </view>
+  </block>
+</view>
+ 
+<view  wx:if='{{empty}}'  class='noneOne' >
+  <view class='imgI'>
+    <view class='empty'>
+      <image src='../../images/noTeam.png'></image>
+    </view>
+  </view>
+  <view class='emptyText'>你还没有团队成员~</view>
+</view>
+
+<view wx:else >
+  <block wx:for="{{myTeamList}}" wx:key="index">
+    <view class='body'>
+      <view class='body_content' bindtap='myFenXiaoOrder'>
+        <view class='body_content_top'>
+          <view class='body_content_img '>
+            <image src='{{item.user_avatar}}'></image>
+          </view>
+          <view class='body_content_top_text'>
+            <view class='info1'>{{item.user_name}}</view>
+            <view class='info2'>注册时间：{{tutil.formatTime(item.user_regist_time)}}</view>
+            <view class='body_text'>
+              <text>推广{{item.user_pop_count}}人</text>
+            </view>
+          </view>
+        </view>
+        <view class='body_view1'></view>
+        <view class='body_content_bottom'>消费
+          <text>{{item.user_buy_total}}</text>
+          <view class='body_text'>{{item.user_order_count}}个订单</view>
+        </view>
+      </view>
+
+    </view>
+  </block>
+</view>

@@ -1,0 +1,193 @@
+/* pages/mine/myFenXiao_myTeam.wxss */
+page{
+  background-color: #F5F5F5;
+}
+.body {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+
+}
+/* 头部的级别 */
+.header {
+  float: left;
+  width:750rpx;
+height:88rpx;
+background:#FFFFFF;
+margin-bottom: 21rpx;
+}
+.headerTitle1 {
+  float: left;
+  text-align: right;
+  margin-top: 29rpx;
+  width:300rpx;
+height:35rpx;
+font-size:28rpx;
+font-family:SourceHanSansSC-Medium;
+font-weight:900;
+color:#333333;
+}
+.headerTitle2 {
+  float: left;
+  text-align: right;
+  margin-top: 29rpx;
+  width:300rpx;
+height:35rpx;
+font-size:28rpx;
+font-family:SourceHanSansSC-Medium;
+font-weight:900;
+color:#999999;
+}
+
+/* 信息为空的部分 */
+
+.noOne{
+display: none
+}
+.noneOne{
+  width: 100%;
+  float: left;
+ margin-top: 40%
+}
+.imgI{
+  height: 202rpx;
+  width: 100%;
+}
+.empty{
+  float: left;
+  height: 114rpx;
+  width: 202rpx;
+  margin-left: 38%;
+  margin-bottom: 40rpx;
+   
+}
+.empty image{
+  float: left;
+  height: 114rpx;
+  width: 202rpx;
+}
+.emptyText{
+  text-align: center; 
+  width:100%;
+height:20rpx;
+font-size:20rpx;
+font-family:MicrosoftYaHei;
+font-weight:400;
+color:rgba(204,204,204,1);
+line-height:28rpx;
+}
+/* 会员信息部分 */
+.body_view1 {
+  float: left;
+  width: 750rpx;
+  height: 1rpx;
+  background: #EEEEEE;
+  margin-bottom: 20rpx;
+}
+
+
+.body_content {
+  float: left;
+  width: 750rpx;
+  height: 191rpx;
+  background: #FFFFFF;
+}
+
+.body_content_top {
+  float: left;
+  width: 750rpx;
+  height: 110rpx;
+}
+
+.body_content_img {
+  margin-left: 20rpx;
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.body_content_img image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.body_content_top_text {
+  float: left;
+  margin-left: 23rpx;
+  width: 625rpx;
+  height: 191rpx;
+}
+
+.info1 {
+  float: left;
+  margin-top: 11rpx;
+  width: 500rpx;
+  height: 30rpx;
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #333333;
+}
+
+
+.info2 {
+  float: left;
+  margin-top: 15rpx;
+  width: 300rpx;
+  height: 19rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #999999;
+}
+
+.body_content_top_text_time {
+  width: 205px;
+  height: 19px;
+  font-size: 20px;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #999999;
+}
+
+.body_content_bottom {
+  float: left;
+  margin-left: 21rpx;
+  margin-top: 21rpx;
+  width: 750rpx;
+  height: 60rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #999999;
+}
+
+.body_content_bottom text {
+  width: 130rpx;
+  height: 23rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #999999;
+}
+
+.body_text {
+  float: right;
+  width: 130rpx;
+  height: 120rpx;
+  font-size:20rpx;
+font-family:SourceHanSansSC-Medium;
+font-weight:500;
+color:#999999;
+}
+
+.body_text text {
+  float: right;
+  width: 97rpx;
+  height: 100rpx;
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #333333;
+}

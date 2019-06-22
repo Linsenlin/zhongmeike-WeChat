@@ -1,0 +1,22 @@
+<!--pages/mine/myFenXiaoRewardList.wxml-->
+<wxs module="tutil" src="time.wxs"></wxs>
+<block wx:for="{{myBountyList}}" wx:key="index">
+  <view class='body'>
+    <view class='body_content'>
+      <view class='body_img'>
+        <image src='{{item.user_avatar}}'></image>
+      </view>
+      <view class='body_text'>
+        <view class='body_text_name'>{{item.user_name}}</view>
+        <view class='body_text_name'>
+          <text>下级</text>
+        </view>
+      </view>
+      <view class='body_rigth'>
+        <view class='body_rigth_price'>奖励：
+          <text>{{item.user_award_worth}}</text> 元</view>
+        <view class='body_rigth_time'>{{tutil.formatTime(item.user_create_retail_time)}}</view>
+      </view>
+    </view>
+  </view>
+</block>

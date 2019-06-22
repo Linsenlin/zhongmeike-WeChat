@@ -1,0 +1,20 @@
+<!--pages/mine/myFenXiaoQRcode.wxml-->
+<view class='body'>
+<!-- 头部的图片区 -->
+<view class='header'>
+<view  class='lefeHeader'>
+<view class='lefeHeaderTitle'>自用省钱分享赚钱</view>
+</view>
+</view>
+<!-- 分享美丽，就这简单! -->
+<view class='title'>分享美丽，就这简单!</view>
+<view class='detail'>
+<view class='detailtext'>邀请好友升级会员享受更多折扣，好友成功消费你将获得更多佣金,
+</view>
+</view>
+ 
+    <view class='body_QRcode'>
+      <image src='{{share_code_url}}'></image>
+    </view>
+   <view class='footer'>长按识别二维码进入小程序</view>
+</view>

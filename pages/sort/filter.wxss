@@ -1,0 +1,155 @@
+/* pages/sort/filter.wxss */
+
+.body {
+  float: left;
+  background: white;
+  width: 100%;
+}
+
+.top {
+  height: 98rpx;
+  width: 100%;
+  float: left;
+  border-bottom: 1rpx solid #eee;
+  font-size: 24rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #666;
+  line-height: 98rpx;
+  text-indent: 21rpx;
+}
+
+.topImg {
+  float: right;
+  margin-right: 19rpx;
+  margin-top: 45rpx;
+  height: 18rpx;
+  width: 30rpx;
+}
+
+.topImg image {
+  float: left;
+  height: 18rpx;
+  width: 30rpx;
+}
+
+/* 品牌展示区 */
+
+.show {
+  float: left;
+  width: 100%;
+  height: 100%;
+
+}
+
+.showBrand {
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 40rpx;
+  width: 200rpx;
+  height: 64rpx;
+  background: #eee;
+  border-radius: 4rpx;
+  font-size: 24rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  line-height: 64rpx;
+  border: 1rpx solid white;
+}
+.showBrand image{
+  float: left;
+  height: 64rpx;
+  width: 200rpx;
+}
+
+.showBrandOne {
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 40rpx;
+  width: 198rpx;
+  height: 62rpx;
+  background: #FFFFFF;
+  border-radius: 4rpx;
+  font-size: 24rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  line-height: 64rpx;
+  border:1px solid #000000;
+}
+.showBrandOne image{
+  float: left;
+  height: 64rpx;
+  width: 200rpx;
+}
+.choose {
+
+  position: absolute;
+  float: right;
+  height: 30rpx;
+  width: 30rpx;
+  margin-top: 36rpx;
+  margin-left: 170rpx;
+}
+
+.choose image {
+  float: right;
+  height: 30rpx;
+  width: 30rpx;
+}
+.chooses {
+  position: absolute;
+  float: right;
+  height: 30rpx;
+  width: 30rpx;
+  margin-top: -30rpx;
+  margin-left: 170rpx;
+}
+
+.chooses image {
+  float: right;
+  height: 30rpx;
+  width: 30rpx;
+}
+
+/* 底部按钮  */
+
+.footerBtn {
+  position: absolute;
+  bottom: 0rpx;
+  background: pink;
+  float: left;
+  width: 100%;
+  height: 98rpx;
+}
+
+.leftBtn {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0rpx 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.08);
+  font-size: 28rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  line-height: 98rpx;
+  text-align: center;
+}
+
+.rightBtn {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: #333;
+  box-shadow: 0rpx 0rpx 6rpx 0rpx rgba(0, 0, 0, 0.08);
+  font-size: 28rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #fff;
+  line-height: 98rpx;
+  text-align: center;
+}

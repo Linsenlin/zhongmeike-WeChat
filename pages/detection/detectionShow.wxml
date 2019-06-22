@@ -1,0 +1,97 @@
+<!-- pages/detection/detectionShow.wxml -->
+<view class='body'>
+  <!-- 面部解析部分 -->
+  <view class='face'>
+    <view class='faceTitle'>面部解析</view>
+    <view class='content'>
+      <view class='left'>
+        <view class='one'></view>
+        <view class='two'>{{skintestRecordList[0].levelname}}</view>
+        <view class='one'></view>
+        <view class='two'>{{skintestRecordList[3].levelname}}</view>
+        <view class='one'></view>
+        <view class='two'>{{skintestRecordList[4].levelname}}</view>
+      </view>
+      <view class='center'>
+        <image src='../../images/detectionFace.png'></image>
+      </view>
+      <view class='right'>
+        <view class='one'></view>
+        <view class='two'>{{skintestRecordList[2].levelname}}</view>
+        <view class='one'></view>
+        <view class='one'></view>
+        <view class='two'>{{skintestRecordList[1].levelname}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 成因分析 -->
+  <view class='analy'>
+    <view class='faceTitle'>成因分析</view>
+    <view class='analyImg'>
+      <block wx:for="{{list1}}" wx:key="index">
+        <view class='show2' style="background:{{item.color}}" data-currentid='{{index}}' bindtap='checkTipy'>
+          <view class='showImg'>
+            <image wx:if="{{currentIndex2==index}}" src="{{item.imgy}}"></image>
+            <image wx:if="{{currentIndex2!=index}}" src="{{item.imgn}}"></image>
+          </view>
+          <view class="{{currentIndex2==index?'showText2':'showText1'}}">{{item.text}}</view>
+        </view>
+      </block>
+    </view>
+    <!-- 原图与分析图展示 -->
+    <view class='showPicture'>
+      <view class='pic'>
+        <view class='picImg'>
+          <image src='{{skintestRecordList[currentIndex2].origin_img}}'></image>
+        </view>
+        <view class='picText'>原图</view>
+      </view>
+      <view class='pic'>
+        <view class='picImg'>
+          <image src='{{skintestRecordList[currentIndex2].analyse_img}}'></image>
+        </view>
+        <view class='picText'>分析图</view>
+      </view>
+    </view>
+    <!-- 显示分数 -->
+    <view class='grace'>
+      <view class='infoText'>
+        {{skintestRecordList[currentIndex2].levelname}}：{{skintestRecordList[currentIndex2].value}}分
+      </view>
+      <!-- 进度条部分 -->
+      <view class='jindu'>
+        <view class='showJin '>
+          <view class='showDu' style='width:{{skintestRecordList[currentIndex2].value}}%'></view>
+        </view>
+        <view class='jinGrace'></view>
+        <view class='jinGrace'></view>
+        <view class='jinGrace'></view>
+        <view class='jinGrace'></view>
+        <view class='jinGrace'>50分</view>
+        <view class='jinGrace'>60分</view>
+        <view class='jinGrace'>70分</view>
+        <view class='jinGrace'></view>
+        <view class='jinGrace'></view>
+        <view class='jinGrace'>100分</view>
+      </view>
+    </view>
+    <view class='detail'>{{skintestRecordList[currentIndex2].cause}}</view>
+  </view>
+  <!-- 你的肤质存在以下问题 -->
+  <view class='faceQue'>
+    <view class='tetle'>你的肤质存在以下问题：</view>
+    <view class='que'>
+      <scroll-view class="scroll-view" scroll-x style="width: auto;overflow:hidden;">
+        <view id="green" class="scrollItem" wx:for="{{skintestRecordList}}" wx:key="index">
+          <view class='btn' data-currentid='{{index}}' bindtap='checkQuestion'>
+            <view class="{{currentIndex3==index?'btn2':'btn1'}}">{{item.levelname}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='tetle'>
+      <text>专家建议</text>
+    </view>
+    <view class='message '>{{skintestRecordList[currentIndex3].expert}}</view>
+  </view>
+</view>

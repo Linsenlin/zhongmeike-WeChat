@@ -1,0 +1,82 @@
+<!--pages/mine/applyForReturn.wxml-->
+<view class='content'>
+  <view class='ordercenter'>
+    <image class='img' src='{{order_img_url}}'></image>
+    <view class='procenter'>
+      <view class='protitle'>{{order_title}}</view>
+      <view class='proclass'>{{order_label}}</view>
+    </view>
+    <view class='proright'>
+      <view class='count'>x{{goods_count}}</view>
+      <view class='price'>¥{{order_price}}</view>
+    </view>
+  </view>
+  <view class='spec'>
+  <view class='line'></view>
+    <view class='goodstitle'>货物状态</view>
+    <view class='boxRight' bindtap='open2'>{{content2}}</view>
+    <view class='modal_mask' wx:if="{{show2}}"></view>
+    <view class="{{show2?'footer':'footer2'}}">
+      <view class='one'>
+        <text>货物状态</text>
+      </view>
+      <block wx:for="{{list2}}" list-item="item" wx:for-index="index" wx:key="{{index}}">
+        <view class='two' data-currentid='{{index}}' bindtap='click2'>
+          <text>{{item}}</text>
+          <image src="{{currentIndex2==index?'../../images/true4.png':'../../images/noChoose.png'}}"></image>
+        </view>
+      </block>
+      <button class='btn' bindtap='close2'>关闭</button>
+    </view>
+  </view>
+  <view class='spec'>
+  <view class='line'></view>
+    <view class='goodstitle'>退货原因</view>
+    <view class='boxRight' bindtap='open'>{{content}}</view>
+    <view class='modal_mask' wx:if="{{show}}"></view>
+    <view class="{{show?'footer':'footer2'}}">
+      <view class='one'>
+        <text>退货原因</text>
+      </view>
+      <block wx:for="{{list}}" list-item="item" wx:for-index="index" wx:key="{{index}}">
+        <view class='two' data-currentid='{{index}}' bindtap='click'>
+          <text>{{item}}</text>
+          <image src="{{currentIndex==index?'../../images/true4.png':'../../images/noChoose.png'}}"></image>
+        </view>
+      </block>
+      <button class='btn' bindtap='close'>关闭</button>
+    </view>
+
+
+    <view class='spec'>
+    <view class='line'></view>
+      <view class='goodstitle'>退款金额:</view>
+      <view class='rebackprice'>¥{{order_price}}</view>
+    </view>
+    <view class='des'>
+      <text>最多￥{{total}}, 含运费￥{{freight}}</text>
+    </view>
+    <view class='spec'>
+      <view class='goodstitle'>退款说明:</view>
+      <input class='chooseup' placeholder="选填" bindinput='reason' name="returnReason">{{inputValue}}</input>
+    </view>
+    <view class='line'></view>
+    <!--上传图片部分 -->
+    <view class='photo'>
+      <view class='uptitle'>上传凭证</view>
+      <block wx:for="{{photo}}" wx:key="index">
+        <view class='imgview' wx:if="{{item=='../../images/photo.png'}}" bindtap='choosePhoto'>
+          <image src='{{item}}'></image>
+          <view class='up'>上传凭证(最多3张）</view>
+        </view>
+        <view wx:else class='imgviewO' bindtap='choosePhoto'>
+        
+          <image src='{{item}}'></image>
+         
+        </view>
+      </block>
+    </view>
+    <view class='des'></view> 
+    <button class='footer_btn' bindtap='returnGoods'>提交</button>
+  </view>
+</view>

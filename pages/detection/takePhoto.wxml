@@ -1,0 +1,12 @@
+<!--pages/detection/takePhoto.wxml-->
+<view class='noti'>以下是肌肤检测采取你的真实图像数据</view>
+<view class='imgC'>
+  <block wx:for='{{name}}' wx:key="index">
+    <view class='item' bindtap='{{currentIndex==index?"":"takePhoto"}}' data-current='{{index}}'>
+      <image src='{{photo[index]}}' class='img'></image>
+      <view class='name'>{{item}}</view>
+    </view>
+  </block>
+</view>
+<image src='https://www.zhongmeike.com/upload/common/photo_detection.png' class='demo'></image>
+<view class='{{status?"bottom":"bottomS"}}' bindtap='uploadPhoto'>保存照片</view>

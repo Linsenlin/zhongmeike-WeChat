@@ -1,0 +1,38 @@
+<!--pages/detection/detectionTest.wxml-->
+
+<view class='body'>
+  <!-- 题目 -->
+  <view>
+    <view class='testTitle'>Q{{questionList[currentIndex].question_id}}{{questionList[currentIndex].question_desc}}</view>
+    <view wx:for="{{questionList[currentIndex].answers}}" wx:key="index">
+      <view class='question' data-currentid='{{index}}' bindtap='answer'>
+        <view wx:if="{{ item.answer_img=='' ||  item.answer_img==null }}">
+          <view class='chooseOne'>
+            <!-- <image wx:if="{{index==currentIndex}}" src='../../images/skinChoose.png'></image> -->
+          </view>
+          <view class='textShow'>{{item.answer_desc}}</view>
+        </view>
+        <view wx:else>
+          <view class='chooseOne'>
+            <!-- <image wx:if="{{index==currentIndex}}" src='../../images/skinChoose.png'></image> -->
+          </view>
+          <view class='textShow'>{{item.answer_desc}}</view>
+          <view class='Img'>
+            <image src='{{item.answer_img}}'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 显示底部的提交按钮 -->
+  <view wx:if="{{currentIndex==questionList.length-1}}" class='footerbtn'>
+    <button class='btn' bindtap='sumbit'>提交测试</button>
+  </view>
+  <!-- 底部显示题数 -->
+  <view class='footer'>
+    <view class='inde'>{{questionList[currentIndex].question_id}}</view>
+    <view class='fen'>/20</view>
+    <!-- <view class='fen'>/{{questionList.length}}</view> -->
+  </view>
+</view>

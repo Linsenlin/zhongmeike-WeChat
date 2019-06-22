@@ -1,0 +1,136 @@
+/* pages/detection/detectionTest.wxss */
+
+.body {
+  background: white;
+  width: 100%;
+  float: left;
+  border-top: 1rpx solid #ccc;
+}
+
+.testTitle {
+  float: left;
+  width: 75%;
+  height: 98rpx;
+  margin-left: 5%;
+  margin-top: 15%;
+  font-size: 36rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #000;
+  line-height: 50rpx;
+  margin-bottom: 52rpx;
+}
+
+.question {
+  width: 100%;
+  float: left;
+  margin-top: 42rpx;
+}
+
+.choose {
+  height: 40rpx;
+  width: 40rpx;
+  float: left;
+}
+
+.chooseOne {
+  float: left;
+  width: 40rpx;
+  margin-left: 40rpx;
+  height: 40rpx;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+.chooseOne image{
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.textShow {
+  float: left;
+  margin-left: 30rpx;
+  width: 83%;
+  height: 40rpx;
+  font-size: 30rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #666;
+}
+
+.Img {
+  height: 87rpx;
+  width: 116rpx;
+  float: left;
+  margin-top: 20rpx;
+}
+
+.Img image {
+  height: 87rpx;
+  width: 116rpx;
+  float: left;
+}
+
+.none {
+  float: left;
+  height: 1rpx;
+  width: 1rpx;
+}
+
+.footer {
+  position: fixed;
+  bottom:10rpx;
+  /* margin-top: 20%; */
+  float: right;
+  height: 101rpx;
+  /* margin-right: 43rpx; */
+  margin-left: 65%;
+}
+
+.inde {
+  height: 101rpx;
+ 
+  float: left;
+  font-size: 120rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  opacity: 0.08;
+  line-height: 101rpx;
+  
+}
+
+.fen {
+  margin-top: 10%;
+  height: 101rpx;
+  float: left;
+  font-size: 68rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  opacity: 0.08;
+}
+
+/* 提交按钮 */
+
+.footerbtn {
+  width: 100%;
+  height: 70rpx;
+  float: left;
+  margin-top: 30%;
+  /* background: lightsalmon */
+}
+
+.btn {
+  margin-left: 35%;
+  margin-top: 2%;
+  float: left;
+  width: 35%;
+  height: 95%;
+  background: #333333;
+  border-radius: 34rpx;
+  font-size: 36rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 67rpx;
+}

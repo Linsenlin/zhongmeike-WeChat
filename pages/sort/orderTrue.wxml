@@ -1,0 +1,85 @@
+<!--pages/sort/orderTrue.wxml-->
+<view class='body'>
+  <!-- 头部套餐信息 -->
+  <view class='topInfo'>
+    <view class='topImg'>
+      <view class='topLeft'>
+        <image src='{{goods_thumb_image}}'></image>
+      </view>
+      <view class='topRight'>
+        <view class='topTitle'>{{goods_name}} x1</view>
+        <view class='topDetail'>{{goods_intro}}</view>
+        <view class='topFooter'>
+          <view class='topMemberTwo'>
+            <text>数量：</text>
+          </view>
+          <view class='topMember' bindtap='sub'>
+            <image src='../../images/sub.png' style=' width: 20rpx; height: 22rpx;' mode='aspectFit'></image>
+          </view>
+          <view class='topMember'>{{number}}</view>
+          <view class='topMember' bindtap='add'>
+            <image src='../../images/adds.png' style=' width: 22rpx; height: 22rpx;' mode='aspectFit'></image>
+          </view>
+          <view class='topPrice'>￥
+            <text>{{goods_sale_price*number}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 收货地址部分 -->
+  <view class='address' bindtap='myNewAddress'>
+    <text>{{address}}</text>
+
+    <view class='addressChoose'>
+      <image src='../../images/next.png'></image>
+    </view>
+  </view>
+  <!-- 订单详情部分 -->
+  <view class='address'>
+    <text>订单详情</text>
+  </view>
+  <view class='pro'>
+    <view class='proDetail'>
+      <view class='proImg'>
+        <image src='{{goods_thumb_image}}'></image>
+      </view>
+      <view class='proText'>{{goods_name}}{{goods_capacity}}ml</view>
+    </view>
+  </view>
+  <!-- 金额统计部分 -->
+  <view class='price'>
+    <view wx:if="{{user_vip_status==0 && goods_sale_status==1}}" class='priceTop'>
+      <view class='priceTopText'>会员折扣 </view>
+      <view class='priceTopTexttext'>一级会员享受{{percent}}折优惠
+        <image bindtap='tip' src='../../images/zhekou.png'></image>
+      </view>
+      <view class='priceP'>-￥{{folding_price}}</view>
+    </view>
+    <view class='priceTop'>
+      <view class='priceTopText'>运费:</view>
+      <view class='priceP'>+￥{{freight}}</view>
+    </view>
+    <view class='pricePay'>
+      <view class='pricePayLeft'>合计支付：</view>
+      <view class='pricePayRight'>￥{{goods_sale_price*number+freight-folding_price}}</view>
+    </view>
+  </view>
+  <!-- 底部按钮 -->
+  <view class='footer'>
+    <view class='btnone'>实付款 : ￥
+      <text>{{goods_sale_price*number+freight-folding_price}}</text>
+    </view>
+    <view class='btn' bindtap='payOrder'> 前往支付</view>
+  </view>
+
+  <!-- 蒙层效果 -->
+  <view class='modal_mask' wx:if="{{showMask}}"></view>
+  <view class='modal_body' wx:if="{{showMask}}">
+    <view class='mask_title'>会员折扣说明</view>
+    <view class='mask_tip'>
+      1.普通会员所有产品享受0折优惠 2.一级会员所有产品享受9折优惠 3.二级会员所有产品享受8.5折优惠 4.三级会员所有产品享受8折优惠
+    </view>
+    <view class='mask_footer' bindtap='cancleMask'>知道了</view>
+  </view>
+</view>

@@ -1,0 +1,98 @@
+<!-- 定制页面 -->
+<wxs module="tutil" src="time.wxs"></wxs>
+<view class='body'>
+  <!-- 蒙层的显示 -->
+  <view class='modal-mask' wx:if="{{showModal}}">
+    <view class='modal-choose' bindtap='hidentMask'>
+      <image src='../../images/de15.png'></image>
+    </view>
+  </view>
+  <view wx:if="{{showModal}}" class='modal_body'>
+    <view class='modal-title'>您还没有检测！</view>
+    <view class='modal-content'>请先前往“检测->我的肤质”处填写调查问卷完成肌肤检测</view>
+    <view class='modal-footer'>
+      <view class='modal-btn' bindtap='mySkin'>立即检测</view>
+    </view>
+  </view>
+
+  <!-- 头部我的肌肤近况 -->
+  <view class='content'>
+    <view class='ome'>
+      <view class='headerInfo'>
+        <view class='infoLeft'>
+          <view class='headerTitle '>我的肤质近况：</view>
+          <view class='headerDetail'>
+            <text>肤质：</text>{{skin_desc}}
+          </view>
+          <view class='headerDetail'>
+            <text>问题：</text>{{problem_desc}}
+          </view>
+        </view>
+        <view wx:if="{{empty}}" class='infoRight'>
+          <view class='headerImg'>
+            <view class='grace'>
+              <view class='graceText'>{{skin_test_score}}</view>
+              <view class='fen'>分</view>
+            </view>
+          </view>
+          <view class='infoText '>急需改善</view>
+        </view>
+        <view wx:if="{{empty}}" class='infoTime'>{{tutil.formatTime(create_time)}}检测记录生成</view>
+      </view>
+    </view>
+    <!-- <view class='showBtn'>
+      <view class='history'>
+        <navigator url="../detection/detection" open-type="switchTab">
+          历史检测
+        </navigator>
+      </view>
+    </view> -->
+
+    <view class='showBtn' bindtap='detection'>
+      <view class='history' >
+        历史检测
+      </view>
+    </view>
+  </view>
+  <!-- 历史检测的按钮部分 -->
+
+  <!-- 你最想解决部分 -->
+  <view class='content'>
+    <view class='ome '>
+      <view class='sulotionTitle'>最想解决：</view>
+
+      <view class='one'>
+        <block wx:for="{{hotWordList}}" wx:key="index">
+          <view class='two' wx:if="{{index%4==0}}" bindtap='checkIndex' data-currentid='{{index}}'>
+            <view class='choose'>
+              <image wx:if="{{!item.select}}" src='../../images/ture5.png'></image>
+            </view>
+            <view class='ViewText'>{{item.word_title}}</view>
+          </view>
+          <view class='three' wx:if="{{index%4==1}}" bindtap='checkIndex' data-currentid='{{index}}'>
+            <view class='choose'>
+              <image wx:if="{{!item.select}}" src='../../images/ture5.png'></image>
+            </view>
+            <view class='ViewText'>{{item.word_title}}</view>
+          </view>
+          <view class='four ' wx:if="{{index%4==2}}" bindtap='checkIndex' data-currentid='{{index}}'>
+            <view class='choose'>
+              <image wx:if="{{!item.select}}" src='../../images/ture5.png'></image>
+            </view>
+            <view class='ViewText'>{{item.word_title}}</view>
+          </view>
+          <view class='five' wx:if="{{index%4==3}}" bindtap='checkIndex' data-currentid='{{index}}'>
+            <view class='choose'>
+              <image wx:if="{{!item.select}}" src='../../images/ture5.png'></image>
+            </view>
+            <view class='ViewText'>{{item.word_title}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <!-- 开始定制的按钮部分 -->
+    <view class='showBtn'>
+      <view class='history' bindtap='schemeOne'> 开始定制</view>
+    </view>
+  </view>
+</view>

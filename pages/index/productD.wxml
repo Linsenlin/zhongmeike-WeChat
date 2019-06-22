@@ -1,0 +1,3 @@
+<!-- pages/index/productD.wxml -->
+
+<web-view src='{{path}}'></web-view>

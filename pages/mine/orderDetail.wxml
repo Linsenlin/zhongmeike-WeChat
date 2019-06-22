@@ -1,0 +1,57 @@
+<wxs module="tutil" src="time.wxs"></wxs>
+<!--pages/mine/refund.wxml-->
+
+<view class='content'>
+  <view class='apply'>
+    <view class='applytitle'>{{applyTitle}}</view>
+    <view class='detailtitle'>{{detailTitle}}</view>
+  </view>
+  <view class='contact'>
+    <view class='nameview'>
+      <text class='name'>{{user_name}}</text>
+      <text class='phone'>{{user_mobile}}</text>
+    </view>
+    <view class='adderss'>{{order_address}}</view>
+  </view>
+  <view class='ordercenter'>
+    <image class='img' src='{{order_img_url}}'></image>
+    <view class='procenter'>
+      <view class='protitle'>{{order_title}}</view>
+      <view class='proclass'>{{order_label}}</view>
+    </view>
+    <view class='proright'>
+      <view class='count'>x{{goods_count}}</view>
+      <view class='price'>¥{{order_price}}</view>
+    </view>
+  </view>
+  
+  <view class='spec1'>
+    <view class='goodstitle'>物流状态:</view>
+    <view wx:if="{{order_status==2}}" class='rebackprice'>已签收</view>
+    <view wx:if="{{order_status!=2}}" class='rebackprice'>未发货</view>
+  </view>
+  <view class='spec1'>
+    <view class='goodstitle'>快递来源:</view>
+    <view class='rebackprice'>{{order_express_company}}</view>
+  </view>
+  <view class='spec1'>
+    <view class='goodstitle'>官方电话:</view>
+    <view class="{{ showcolor?'rebackprice1':'rebackprice'}}" >{{order_express_phone}}</view>
+  </view>
+  <view class='other'>
+    <view class='goodstitle'>运费</view>
+    <view class='otherprice'>¥{{freight}}</view>
+  </view>
+  <view class='other'>
+    <view class='goodstitle'>实付款</view>
+    <view class='otherprice'>¥{{total}}</view>
+  </view>
+  <view class='spec1'>
+    <view class='goodstitle'>订单编号:</view>
+    <view class='rebackprice'>{{order_num}}</view>
+  </view>
+  <view class='spec1'>
+    <view class='goodstitle'>创建时间:</view>
+    <view class='rebackprice'>{{tutil.formatTime(order_create_times)}}</view>
+  </view>
+</view>

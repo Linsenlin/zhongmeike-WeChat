@@ -1,0 +1,385 @@
+.body {
+  width: 100%;
+}
+
+/* 蒙层的显示 */
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  overflow: hidden;
+ 
+  z-index: 9000;
+   opacity: 0.3;
+}
+
+.modal_body {
+  position: fixed;
+  margin-left: 5%;
+  margin-top: 30%;
+  z-index: 9500;
+  width: 660rpx;
+  height: 500rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+
+.modal-title {
+   z-index: 9999;
+  width: 100%;
+  height: 160rpx;
+  font-size: 36rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  line-height: 160rpx;
+}
+
+.modal-choose {
+  position: fixed;
+  margin-top: 800rpx;
+  height: 50rpx;
+  width: 50rpx;
+  margin-left: 45%;
+}
+
+.modal-choose image {
+  height: 50rpx;
+  width: 50rpx;
+  margin-left: 50%;
+}
+.modal-content{
+  margin-left: 15%;
+  text-align: center;
+  width:400rpx;
+height:76rpx;
+font-size:28rpx;
+font-family:MicrosoftYaHei;
+font-weight:400;
+color:rgba(102,102,102,1);
+line-height:48rpx;
+margin-bottom: 90rpx;
+}
+.modal-footer {
+  height: 168rpx;
+  width: 100%;
+  border-top: 1rpx solid #CCCCCC
+}
+.modal-btn{
+  margin-top: 7%;
+  margin-left: 20%;
+  width:400rpx;
+height:80rpx;
+background:#333333;
+border-radius:40rpx;
+font-size:34rpx;
+font-family:MicrosoftYaHei;
+font-weight:400;
+color:#FFFFFF;
+line-height:80rpx;
+text-align: center
+}
+.content {
+  float: left;
+  width: 100%;
+  height: 571rpx;
+  /* background: lightsalmon; */
+}
+
+.ome {
+  float: left;
+  width: 741rpx;
+  height: 471rpx;
+  background: url('https://www.zhongmeike.com/upload/common/customized_bg.png')no-repeat;
+  background-size: 100% 100%;
+}
+
+/* 检测记录为空 */
+
+.empty {
+  height: 340rpx;
+  width: 100%;
+  float: left;
+}
+
+.emptyImg {
+  height: 105rpx;
+  width: 134rpx;
+  float: left;
+  margin-top: 99rpx;
+  margin-left: 288rpx;
+}
+
+.emptyImg image {
+  height: 105rpx;
+  width: 134rpx;
+  float: left;
+}
+
+.emptyText {
+  float: left;
+  margin-top: 58rpx;
+  width: 100%;
+  height: 21rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999;
+  text-align: center;
+}
+
+.emptyBtn {
+  float: left;
+  width: 100%;
+  height: 48rpx;
+  margin-top: 29rpx;
+}
+
+.emptybutton {
+  margin: 0 auto;
+  width: 140rpx;
+  height: 48rpx;
+  border: 1rpx solid #333;
+  border-radius: 24rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+}
+
+/* 检测记录非空 */
+
+.headerInfo {
+  height: 400rpx;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.infoLeft {
+  width: 65%;
+  height: 90%;
+  float: left;
+}
+
+.infoRight {
+  width: 34%;
+  height: 90%;
+  float: left;
+}
+
+.headerTitle {
+  margin-top: 57rpx;
+  margin-left: 37rpx;
+  width: 250rpx;
+  height: 30rpx;
+  font-size: 28rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+}
+
+.headerDetail {
+  margin-left: 37rpx;
+  margin-top: 40rpx;
+  width: 375rpx;
+  height: 61rpx;
+  font-size: 22rpx;
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: bold;
+  color: #666;
+}
+
+.headerDetail text {
+  font-size: 22rpx;
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: bold;
+  color: #333;
+}
+
+.headerImg {
+  margin-top: 64rpx;
+  float: left;
+  width: 176rpx;
+  height: 181rpx;
+  background: url(https://www.zhongmeike.com/upload/common/skin_test_bg.png)no-repeat;
+  background-size: 100% 100%;
+}
+
+.grace {
+  float: left;
+  height: 60rpx;
+  margin-top: 35%;
+  text-align: center;
+  width: 100%;
+}
+
+.fen {
+  float: left;
+  margin-top: 5%;
+  font-size: 36rpx;
+  font-family: SourceHanSansSC-Heavy;
+  color: #333;
+  width: 30%;
+}
+
+.graceText {
+  float: left;
+  text-align: right;
+  width: 60%;
+  font-size: 60rpx;
+  font-family: SourceHanSansSC-Heavy;
+  font-weight: 800;
+  color: #333;
+}
+
+.infoText {
+  float: left;
+  margin-top: 37rpx;
+  text-align: center;
+  width: 100%;
+  height: 25rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+}
+
+.infoTime {
+  text-align: center;
+  float: left;
+  width: 100%;
+  height: 19rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999;
+}
+
+/* 历史检测的按钮部分 */
+
+.showBtn {
+  float: left;
+  margin-top: -3%;
+  height: 76rpx;
+  width: 100%;
+}
+
+.history {
+  float: left;
+  margin-left: 35%;
+  width: 220rpx;
+  height: 76rpx;
+  background: #000;
+  border-radius: 38rpx;
+  font-size: 24rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #fff;
+  line-height: 76rpx;
+  text-align: center;
+}
+
+/* 你最想解决部分 */
+
+.sulotion {
+  float: left;
+  margin-top: 60rpx;
+  width: 750rpx;
+  background: url('https://www.zhongmeike.com/upload/common/customized_bg.png')no-repeat;
+  background-size: 100% 100%;
+}
+
+.sulotionTitle {
+  margin-top: 2%;
+  height: 102rpx;
+  width: 100%;
+  font-size: 30rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  line-height: 102rpx;
+  text-indent: 20rpx;
+}
+
+.one {
+  /* margin-top: 20rpx; */
+  margin-left: 8%;
+  height: 260rpx;
+  width: 85%;
+  margin-bottom: 20rpx;
+}
+
+.two {
+  margin-bottom: 5%;
+  height: 100rpx;
+  width: 152rpx;
+  float: left;
+  margin-left: 40rpx;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgba(245, 199, 159, 1) 0%, rgba(255, 189, 141, 1) 100%);
+}
+
+.choose {
+  float: left;
+  margin-left: 63rpx;
+  margin-top: 20rpx;
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 50%;
+  border: 1rpx solid #fff;
+}
+
+.choose image {
+  width: 26rpx;
+  height: 26rpx;
+  float: left;
+}
+
+.ViewText {
+  text-align: center;
+  float: left;
+  margin-top: 5rpx;
+  width: 100%;
+  height: 23rpx;
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #fff;
+}
+
+.three {
+  margin-bottom: 5%;
+  height: 100rpx;
+  width: 152rpx;
+  float: left;
+  margin-left: 40rpx;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgba(255, 135, 166, 1) 0%, rgba(241, 156, 182, 1) 100%);
+}
+
+.four {
+  margin-bottom: 5%;
+  height: 100rpx;
+  width: 152rpx;
+  float: left;
+  margin-left: 40rpx;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgba(217, 179, 220, 1) 0%, rgba(216, 141, 251, 1) 100%);
+}
+
+.five {
+  height: 100rpx;
+  width: 152rpx;
+  float: left;
+  margin-left: 40rpx;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(167, 224, 244, 1) 0%, rgba(153, 210, 234, 1) 100%);
+}

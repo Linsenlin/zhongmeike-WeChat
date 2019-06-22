@@ -1,0 +1,201 @@
+<!--pages/mine/order.wxml-->
+<wxs module="tutil" src="time.wxs"></wxs>
+<view class='content'>
+  <view class='topnav'>
+    <block wx:for='{{titleArr}}' wx:key="index">
+      <view class='{{currentIndex==index?"swipselect":"swip"}}' data-currentid='{{index}}' bindtap='checkType'>{{item}}</view>
+    </block>
+  </view>
+
+  <view wx:if='{{empty}}' class='empty'>
+    <image src='../../images/emptyorder.png' class='emptyimg'></image>
+    <view class='emptytxt'>您还没有订单~</view>
+  </view>
+
+
+  <view wx:else class='emptytwo'>
+    <!-- 申请中 -->
+    <block wx:if='{{currentIndex==1}}'>
+      <block wx:for="{{returnOrderList}}"  wx:for-index="index" wx:key="index">
+        <view wx:if="{{item.return_status==0}}" class='orderitem'>
+          <view class='ordertop'>
+            <view class='num'>订单编号：{{item.order_num}}</view>
+            <view class='status'>申请中</view>
+          </view>
+          <view class='line'></view>
+          <view class='ordercenter'>
+            <image class='img' src='{{item.order_info.order_img_url}}'></image>
+            <view class='procenter'>
+              <view class='protitle'>{{item.order_info.order_title}}</view>
+              <view class='proclass'>{{item.order_info.order_label}}</view>
+            </view>
+            <view class='proright'>
+              <view class='count'>x{{item.goods_count}}</view>
+              <view class='price'>¥{{item.order_price}}</view>
+            </view>
+          </view>
+          <view class='linetwo'></view>
+          <view class='orderbottom' data-currentid='{{index}}' bindtap='checkDetail'>
+            <image src='../../images/lesstime.png' class='time'></image>
+            <text class='lesstime'>{{tutil.formatTime(item.order_create_time)}}</text>
+            <text class='btncancel'>取消退款</text>
+          </view>
+        </view>
+      </block>
+    </block>
+    <!-- 被拒绝 -->
+    <block wx:if='{{currentIndex==2}}'>
+      <block wx:for="{{returnOrderList}}"  wx:for-index="index" wx:key="index">
+        <view wx:if="{{item.return_status==2}}" class='orderitem'>
+          <view class='ordertop'>
+            <view class='num'>订单编号：{{item.order_num}}</view>
+            <view class='status'>被拒绝</view>
+          </view>
+          <view class='line'></view>
+          <view class='ordercenter'>
+            <image class='img' src='{{item.order_info.order_img_url}}'></image>
+            <view class='procenter'>
+              <view class='protitle'>{{item.order_info.order_title}}</view>
+              <view class='proclass'>{{item.order_info.order_label}}</view>
+            </view>
+            <view class='proright'>
+              <view class='count'>x{{item.goods_count}}</view>
+              <view class='price'>¥{{item.order_price}}</view>
+            </view>
+          </view>
+          <view class='linetwo'></view>
+          <view class='orderbottom'  data-currentid='{{index}}' bindtap='refundDetail' >
+            <image src='../../images/lesstime.png' class='time'></image>
+            <text class='lesstime'>{{tutil.formatTime(item.order_create_time)}}</text>
+            <text class='btncancel' >查看详情</text>
+          </view>
+        </view>
+      </block>
+    </block>
+    <!-- 已退款 -->
+    <block wx:if='{{currentIndex==3}}'>
+      <block wx:for="{{returnOrderList}}" list-item="item" wx:for-index="index" wx:key="index">
+        <view wx:if="{{item.return_status==1}}" class='orderitem'>
+          <view class='ordertop'>
+            <view class='num'>订单编号：{{item.order_num}}</view>
+            <view class='status'>已退款</view>
+          </view>
+          <view class='line'></view>
+          <view class='ordercenter'>
+            <image class='img' src='{{item.order_info.order_img_url}}'></image>
+            <view class='procenter'>
+              <view class='protitle'>{{item.order_info.order_title}}</view>
+              <view class='proclass'>{{item.order_info.order_label}}</view>
+            </view>
+            <view class='proright'>
+              <view class='count'>x{{item.goods_count}}</view>
+              <view class='price'>¥{{item.order_price}}</view>
+            </view>
+          </view>
+          <view class='linetwo'></view>
+          <view class='orderbottom'  data-currentid='{{index}}' bindtap='refundDetail2'>
+            <image src='../../images/lesstime.png' class='time'></image>
+            <text class='lesstime'>{{tutil.formatTime(item.order_create_time)}}</text>
+            <text class='btncancel' >查看详情</text>
+          </view>
+        </view>
+      </block>
+    </block>
+   
+    <!-- 订单的全部信息 -->
+    <block wx:if='{{currentIndex==0}}'>
+      <block wx:for="{{returnOrderList}}"  wx:key="index">
+        <!-- 申请中 -->
+        <view wx:if="{{item.return_status==0}}"  class='orderitem'>
+          <view class='ordertop'>
+            <view class='num'>订单编号：{{item.order_num}}</view>
+            <view class='status'>申请中</view>
+          </view>
+          <view class='line'></view>
+          <view class='ordercenter'>
+            <image class='img' src='{{item.order_info.order_img_url}}'></image>
+            <view class='procenter'>
+              <view class='protitle'>{{item.order_info.order_title}}</view>
+              <view class='proclass'>{{item.order_info.order_label}}</view>
+            </view>
+            <view class='proright'>
+              <view class='count'>x{{item.goods_count}}</view>
+              <view class='price'>¥{{item.order_price}}</view>
+            </view>
+          </view>
+          <view class='linetwo'></view>
+          <view class='orderbottom' data-currentid='{{index}}' bindtap='checkDetail'>
+            <image src='../../images/lesstime.png' class='time'></image>
+            <text class='lesstime'>{{tutil.formatTime(item.order_create_time)}}</text>
+            <text class='btncancel' >取消退款</text>
+          </view>
+        </view>
+        <!-- 被拒绝 -->
+        <view wx:if="{{item.return_status==2}}" class='orderitem'>
+          <view class='ordertop'>
+            <view class='num'>订单编号：{{item.order_num}}</view>
+            <view class='status'>被拒绝</view>
+          </view>
+          <view class='line'></view>
+          <view class='ordercenter'>
+            <image class='img' src='{{item.order_info.order_img_url}}'></image>
+            <view class='procenter'>
+              <view class='protitle'>{{item.order_info.order_title}}</view>
+              <view class='proclass'>{{item.order_info.order_label}}</view>
+            </view>
+            <view class='proright'>
+              <view class='count'>x{{item.goods_count}}</view>
+              <view class='price'>¥{{item.order_price}}</view>
+            </view>
+          </view>
+          <view class='linetwo'></view>
+          <view class='orderbottom'  data-currentid='{{index}}' bindtap='refundDetail' >
+            <image src='../../images/lesstime.png' class='time'></image>
+            <text class='lesstime'>{{tutil.formatTime(item.order_create_time)}}</text>
+            <text class='btncancel' >查看详情</text>
+          </view>
+        </view>
+        <!-- 已退款 -->
+        <view wx:if="{{item.return_status==1}}" class='orderitem'>
+          <view class='ordertop'>
+            <view class='num'>订单编号：{{item.order_num}}</view>
+            <view class='status'>已退款</view>
+          </view>
+          <view class='line'></view>
+          <view class='ordercenter'>
+            <image class='img' src='{{item.order_info.order_img_url}}'></image>
+            <view class='procenter'>
+              <view class='protitle'>{{item.order_info.order_title}}</view>
+              <view class='proclass'>{{item.order_info.order_label}}</view>
+            </view>
+            <view class='proright'>
+              <view class='count'>x{{item.goods_count}}</view>
+              <view class='price'>¥{{item.order_price}}</view>
+            </view>
+          </view>
+          <view class='linetwo'></view>
+          <view class='orderbottom'  data-currentid='{{index}}' bindtap='refundDetail2'>
+            <image src='../../images/lesstime.png' class='time'></image>
+            <text class='lesstime'>{{tutil.formatTime(item.order_create_time)}}</text>
+            <text class='btncancel' bindtap='checkDetail'>查看详情</text>
+            
+          </view>
+        </view>
+        
+      </block>
+    </block>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+

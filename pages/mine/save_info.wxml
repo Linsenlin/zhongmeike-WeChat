@@ -1,0 +1,45 @@
+<!--pages/mine/save_info.wxml-->
+<view class='body'>
+  <block wx:for="{{addressList}}" wx:key="index">
+    <view wx:if="{{addressList.length!=0}}" class='body_content'>
+      <view class='body_content_choose' data-currentid='{{index}}' bindtap='setting'>
+        <image src="{{item.address_status == 1?'../../images/havechoose.png':'../../images/noChoo.png'}}" class='in-image' mode='widthFix'></image>
+      </view>
+      <view class='body_content_text'>
+        <view class='body_content_text_title'>我在</view>
+        <view class='body_content_text_info'>
+          {{item.address_city}} {{item.address_detail}} {{item.address_code}}
+        </view>
+        <view class='body_content_text_info'>
+          {{item.address_contact}}收  {{item.address_contact_mobile}}
+        </view>
+
+      </view>
+      <view class='line'></view>
+      <view class='choose'>
+        <view class='chooseContent' data-currentid='{{index}}' bindtap='delAddress'>
+          <image src='../../images/del.png' mode='widthFix'></image>
+          删除
+        </view>
+        <view class='chooseContent' data-currentid='{{index}}' bindtap='editAddress'>
+          <image src='../../images/edit.png' mode='widthFix'></image>
+          编辑
+        </view>
+
+      </view>
+    </view>
+  </block>
+  <!-- 新增地址 -->
+  <view class='content'>
+    <view class='newAdd' bindtap='myNewAddress'>
+      <view class='add_logo'>
+        <image src='/images/add.png' class='in-image' mode='widthFix'></image>
+      </view>
+      <view class='title'>新增地址</view>
+      <!-- <view class='next'>
+        <image src='../../images/next.png' class='in-image' mode='widthFix'></image>
+      </view> -->
+    </view>
+  </view>
+
+</view>

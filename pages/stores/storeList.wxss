@@ -1,0 +1,95 @@
+/* pages/stores/storeList.wxss */
+
+.body {
+  width: 750rpx;
+}
+
+/* 顶部的地址显示 */
+
+.address {
+  float: left;
+  width: 750rpx;
+  height: 98rpx;
+  background: #000;
+  font-size: 28rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #faffff;
+  line-height: 98rpx;
+  text-indent: 39rpx;
+  margin-bottom: 10rpx;
+}
+
+.addressImg {
+  float: right;
+  margin-right: 618rpx;
+  margin-top: 43rpx;
+  width: 29rpx;
+  height: 18rpx;
+}
+
+.addressImg image {
+  width: 29rpx;
+  height: 18rpx;
+  float: left;
+}
+
+/* 店铺列表 */
+
+.store {
+  float: left;
+  margin-top: 30rpx;
+  width: 345rpx;
+  height: 399rpx;
+  margin-left: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.storeImg {
+  height: 232rpx;
+  width: 345rpx;
+  float: left;
+}
+
+.storeImg image {
+  height: 232rpx;
+  width: 345rpx;
+  float: left;
+}
+
+.storeTitle {
+  float: left;
+  margin-top: 33rpx;
+  width: 100%;
+  height: 28rpx;
+  font-size: 28rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  line-height: 28rpx;
+  text-align: center;
+  margin-bottom: 16rpx;
+}
+
+.storeSearch {
+  width: 100%;
+  height: 22rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  float: left;
+}
+
+.storeDetail {
+  width: 100%;
+  height: 20rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999;
+  text-align: center;
+  float: left;
+  margin-top: 16rpx;
+}

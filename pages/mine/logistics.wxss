@@ -1,0 +1,245 @@
+/* pages/mine/logistics.wxss */
+
+.body {
+  width: 750rpx;
+  height: 100%;
+  float: left;
+  background: #f5f5f5;
+}
+
+.line1 {
+  float: left;
+  width: 750rpx;
+  height: 1rpx;
+  background: #f5f5f5;
+}
+
+.line2 {
+  float: left;
+  width: 750rpx;
+  height: 20rpx;
+  background: #f5f5f5;
+}
+
+.body_pro {
+  width: 750rpx;
+  height: 100rpx;
+  background: #fff;
+  float: left;
+}
+
+.body_pro_img {
+  width: 86rpx;
+  height: 78rpx;
+  float: left;
+  margin-left: 40rpx;
+  margin-top: 11rpx;
+}
+
+.body_pro_img  image {
+  width: 86rpx;
+  height: 78rpx;
+  float: left;
+}
+
+.body_pro_title {
+  width: 200rpx;
+  height: 65rpx;
+  float: left;
+  margin-top: 24rpx;
+  margin-left: 43rpx;
+}
+
+.title1 {
+  width: 231rpx;
+  height: 27rpx;
+  font-size: 28rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #333;
+}
+
+.title2 {
+  float: left;
+  margin-top: 15rpx;
+  width: 231rpx;
+  height: 19rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #999;
+}
+
+.title3 {
+  width: 240rpx;
+  height: 24rpx;
+  font-size: 28rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #333;
+}
+
+.title4 {
+  text-align: center;
+  float: left;
+  margin-top: 15rpx;
+  width: 240rpx;
+  height: 19rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #999;
+}
+
+/* 快递公司 */
+
+.express {
+  width: 750rpx;
+  height: 98rpx;
+  float: left;
+  background: #fff;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.express_company {
+  width: 152rpx;
+  height: 55rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 22rpx;
+}
+
+.express_company image {
+  width: 152rpx;
+  height: 55rpx;
+  float: left;
+}
+
+/* 物流信息 */
+
+.info {
+  width: 750rpx;
+  /* background: lightgoldenrodyellow; */
+  float: left;
+  background: #fff;
+}
+
+.info_img {
+  float: left;
+  width: 110rpx;
+  height: 161rpx;
+  position: relative;
+}
+
+.info_imga {
+  width: 24rpx;
+  height: 24rpx;
+  float: left;
+  margin-left: 42rpx;
+  margin-top: 36rpx;
+}
+
+.info_imga image {
+  width: 24rpx;
+  height: 24rpx;
+  float: left;
+}
+
+.info_text {
+  width: 640rpx;
+  float: left;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.info_text_info {
+  width: 95%;
+  float: left;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #1dc7ff;
+}
+
+.info_text_info2 {
+  width: 95%;
+  float: left;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #333;
+}
+
+.info_text_time {
+  width: 640rpx;
+  /* height: 18rpx; */
+  float: left;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  text-indent: 25rpx;
+  color: #1dc7ff;
+  /* margin-bottom: 20rpx; */
+}
+
+.info_text_time2 {
+  width: 640rpx;
+  /* height: 18rpx; */
+  float: left;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  text-indent: 25rpx;
+  color: #999;
+  /* margin-bottom: 20rpx; */
+}
+
+.in {
+  width: 2rpx;
+  height: 250rpx;
+  background: #ccc;
+  float: left;
+  margin-left: 53rpx;
+}
+
+.in1 {
+  width: 2rpx;
+  /* height: 48rpx; */
+  background: #ccc;
+  float: left;
+  margin-left: 53rpx;
+}
+
+.in2 {
+  width: 2rpx;
+  height: 300rpx;
+  background: #ccc;
+  float: left;
+  margin-left: 53rpx;
+  margin-top: 71rpx;
+}
+
+.ru {
+  width: 14rpx;
+  height: 14rpx;
+  float: left;
+  margin-left: 48rpx;
+  margin-top: 47rpx;
+  background: #ccc;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ru1 {
+  width: 24rpx;
+  height: 24rpx;
+  float: left;
+  margin-left: 43rpx;
+  margin-top: 47rpx;
+  background: #1dc7ff;
+  border-radius: 50%;
+  position: absolute;
+}

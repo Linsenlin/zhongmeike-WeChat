@@ -1,0 +1,161 @@
+/* pages/mine/myFenXiao_Order.wxss */
+page{
+  background-color: #F5F5F5
+}
+.body {
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+}
+
+.body_content {
+  margin-top: 20rpx;
+  float: left;
+  width: 750rpx;
+  height: 191rpx;
+  background: #FFFFFF;
+}
+
+.body_view1 {
+  float: left;
+  width: 750rpx;
+  height: 1rpx;
+  background: #EEEEEE;
+}
+
+.body_view2 {
+  float: left;
+  width: 750rpx;
+  height: 15rpx;
+  background: #EEEEEE;
+}
+
+.body_content_top {
+  float: left;
+  width: 750rpx;
+  height: 110rpx;
+}
+
+.body_content_top_img {
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.body_content_top_img image {
+  width: 70rpx;
+  height: 52rpx;
+  float: left;
+}
+
+.body_content_top_text {
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 620rpx;
+  height: 110rpx;
+}
+
+.body_content_top_name {
+  float: left;
+  width: 330rpx;
+  height: 24rpx;
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 1%;
+}
+
+.body_content_top_number {
+  float: left;
+  width: 300rpx;
+  height: 35rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #999999;
+}
+
+.body_content_top_price {
+  float: left;
+  text-align: right;
+  width: 300rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #333333;
+}
+
+.body_content_bottom {
+  float: left;
+  width: 750rpx;
+  height: 80rpx;
+}
+
+.body_content_bottom_Royalty {
+  float: left;
+  margin-left: 25rpx;
+  margin-top: 20rpx;
+  width: 250rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #999999;
+}
+
+.body_content_bottom_Royalty text {
+  width: 115rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #999999;
+}
+
+.body_content_bottom_time {
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  text-align: right;
+  width: 300rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #999999;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 750rpx;
+  height: 98rpx;
+  background: #000000;
+}
+
+.footer1 {
+  text-align: center;
+  float: left;
+  margin-top: 32rpx;
+  width: 750rpx;
+  height: 34rpx;
+  background: #000000;
+  font-size: 36rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.footer1 text {
+  font-size: 36rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color:#FFFFFF;
+}

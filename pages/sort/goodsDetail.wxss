@@ -1,0 +1,116 @@
+/* pages/sort/goodsDetail.wxss */
+
+/* 直接设置swiper属性 */
+
+swiper {
+    width: 100%;
+    height: 400rpx;
+    background: #fff;
+}
+
+swiper-item image {
+    width: 398rpx;
+    height: 313rpx;
+    margin-left: 176rpx;
+    border: 1px solid rgb(250, 248, 248);
+}
+
+.goodsName {
+    margin-top: 6rpx;
+}
+
+.goodsName text {
+    text-align: center;
+    display: block;
+    font-size: 28rpx;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #333;
+    margin-top: 28rpx;
+}
+
+.goodsType {
+    margin-left: 20rpx;
+}
+
+.goodsData {
+    font-size: 30rpx;
+    font-family: MicrosoftYaHei;
+    font-weight: 500;
+    color: #333;
+}
+
+.goodsView {
+    margin-top: 34rpx;
+}
+
+.goodsSelect {
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border: 1px solid #999;
+    text-align: center;
+    color: #999;
+    font-size: 20rpx;
+    display: inline-block;
+}
+
+.goodsSelect:nth-child(2) {
+    margin-left: 40rpx;
+}
+
+.goodsInfo {
+    margin-bottom: 244rpx;
+}
+
+.goodsInfo .goodsText {
+    display: block;
+    font-size: 30rpx;
+    text-align: center
+}
+
+rich-text {
+    width: 700rpx;
+    padding: 25rpx 0;
+}
+
+.rich-text-wrp {
+    background-color: #fff;
+}
+
+/* 底部悬浮栏 */
+
+.detail-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100rpx;
+}
+
+.detail-nav text {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30rpx;
+    width: 50%;
+    height: 98rpx;
+    line-height: 98rpx;
+}
+
+.button-white {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.button-black {
+    background-color: #111;
+    color: #fff;
+}

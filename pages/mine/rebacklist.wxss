@@ -1,0 +1,180 @@
+/* pages/mine/rebacklist.wxss */
+page{
+  background: #f5f5f5;
+}
+.content {
+  width: 100%;
+margin-bottom: 100rpx;
+ 
+}
+.topnav {
+  width: 100%;
+  position: fixed;
+  height: 98rpx;
+  background: white;
+}
+.swipselect {
+  width: 25%;
+  height: 98rpx;
+  color: #000000;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 98rpx;
+  float: left;
+}
+.swip {
+  width: 25%;
+  height: 98rpx;
+  color: #999999;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 98rpx;
+  float: left;
+}
+.empty {
+  width: 100%;
+  text-align: center;
+  padding-top: 50%;
+}
+.emptyimg {
+  width: 228rpx;
+  height: 204rpx;
+}
+.emptytxt {
+  color: #999999;
+  font-size: 28rpx;
+}
+.emptytwo {
+  width: 100%;
+  text-align: center;
+  padding-top: 100rpx;
+  background: #f5f5f5;
+}
+.orderitem {
+  width: 100%;
+  height: 342rpx;
+  background: #ffffff;
+  margin-top: 30rpx;
+}
+.num {
+  font-size: 22rpx;
+  color: #333333;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+}
+.ordertop {
+  background: #ffffff;
+  width: 100%;
+  height: 80rpx;
+}
+.status {
+  font-size: 22rpx;
+  color: #333333;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 30rpx;
+}
+.line {
+  width: 100%;
+  height: 1rpx;
+  background: #cccccc;
+}
+.img {
+  width: 142rpx;
+  height: 126rpx;
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.procenter {
+  height: 126rpx;
+  text-align: left;
+  width: 50%;
+  float: left;
+  margin-left: 25rpx;
+  margin-top: 30rpx;
+}
+.protitle {
+  color: #333333;
+  font-size: 28rpx;
+}
+.proclass {
+  color: #999999;
+  font-size: 24rpx;
+}
+.proright {
+  float: right;
+  height: 126rpx;
+  width: 12%;
+  margin-top: 30rpx;
+  margin-right: 10rpx;
+}
+.count {
+  color: #999999;
+  font-size: 24rpx;
+  /* margin-right: 20rpx; */
+  text-align: right;
+}
+.price {
+  font-size: 28rpx;
+  color: #D5B771;
+  margin-right: 30rpx;
+  margin-top: 40rpx;
+}
+.ordercenter {
+  width: 100%;
+  height: 182rpx;
+}
+.orderbottom {
+  width: 100%;
+  height: 80rpx;
+}
+.time {
+  width: 24rpx;
+  height: 24rpx;
+  float: left;
+  margin-top: 28rpx;
+  margin-left:20rpx;
+}
+.linetwo {
+  width: 100%;
+  height: 2rpx;
+  background: #cccccc;
+}
+.lesstime {
+  font-size: 28rpx;
+  color: #333333;
+  float: left;
+  margin-top:20rpx;
+  margin-left:10rpx;
+
+}
+.btnpay {
+  color: #999999;
+  font-size: 20rpx;
+  border-style: solid;
+  border-width: 2rpx;
+  border-color: #999999;
+  float: right;
+  height:48rpx;
+  width:110rpx;
+  line-height:50rpx;
+  margin-right: 40rpx;
+  margin-top:16rpx;
+  border-radius: 6rpx;
+}
+.btncancel {
+  color: #ffffff;
+  font-size: 20rpx;
+  background: #333333;
+  border-radius: 6rpx;
+  float: right;
+  height:50rpx;
+width:110rpx;
+line-height:50rpx;
+  margin-right: 25rpx;
+  margin-top:16rpx;
+
+}

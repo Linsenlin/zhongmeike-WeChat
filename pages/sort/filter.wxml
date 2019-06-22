@@ -1,0 +1,41 @@
+<!--pages/sort/filter.wxml-->
+<view class='body'>
+  <view class='top'>品牌
+    <view class='topImg' bindtap='showList'>
+      <image src="{{show?'../../images/topSort.png':'../../images/down.png'}}"></image>
+    </view>
+  </view>
+  <!-- 品牌展示区 -->
+  <view wx:if="{{show}}" class='show'>
+    <block wx:for="{{brandList}}" wx:key="index">
+      <view  bindtap='choose' data-currentid='{{index}}' class="{{index==showBrand?'showBrandOne':'showBrand'}}">
+        <image src='{{item.brand_logo}}'></image>
+        <view  class='choose'>
+          <image src="{{index==showBrand?'../../images/sort6.png':''}}" ></image>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='top'>价格
+    <view class='topImg' bindtap='choosePrice'>
+      <image src="{{showPrices?'../../images/topSort.png':'../../images/down.png'}}"></image>
+    </view>
+  </view>
+  <!-- 价格范围展示区 -->
+  <view wx:if="{{showPrices}}" class='show'>
+  
+    <block wx:for="{{price}}" wx:key="index">
+      <view  bindtap='choosePri' data-currentid='{{index}}'  class="{{index==showprice?'showBrandOne':'showBrand'}}">￥{{item.pri}}
+        <view  class='chooses'>
+          <image src="{{index==showprice?'../../images/sort6.png':''}}" mode='aspectFit'></image>
+        </view>
+      </view>
+    </block>
+    
+  </view>
+  <!-- 底部按钮 -->
+  <view class='footerBtn'>
+    <view class='leftBtn' bindtap='cancle'>清空</view>
+    <view class='rightBtn' bindtap='sortProduct'>确定</view>
+  </view>
+</view>

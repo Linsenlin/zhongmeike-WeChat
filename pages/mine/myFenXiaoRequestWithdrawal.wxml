@@ -1,0 +1,39 @@
+<!-- pages/mine/myFenXiaoRequestWithdrawal.wxml -->
+<view class='body'>
+  <view class='body_total'>账户剩余金额：{{total_profit_money}}元</view>
+  <view class='line'></view>
+  <view class='info_mass'>
+    <view class='info_left'>￥</view>
+    <input class='info_right' name="total" bindinput="bindKeyInput" placeholder="输入提现金额">{{crash_count}}</input>
+  </view>
+  <view class='point'>提现金额不能小于1.00元</view>
+  <view class='withdrawl_way'>
+    <view class='withdrawl_way_title'>提现方式</view>
+    <view class='withdrawl_way_buttom' bindtap='choose'>
+      <text> 微信</text>
+      <view class="{{showView?'withdrawl_way_buttom1':'withdrawl_way_buttom2'}}">
+        <image src='../../images/choose.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class="info1{{showView?'info':''}}">
+    <view class='line'></view>
+    <view class='info_mass'>
+      <view class='info_left'>姓名
+        <text>  *</text>
+      </view>
+      <input class='info_right' name="name" placeholder="请输入正确的姓名"></input>
+    </view>
+
+    <view class='line'></view>
+    <view class='info_mass'>
+      <view class='info_mass'>
+        <view class='info_left'>账号
+          <text>  *</text>
+        </view>
+        <input class='info_right' name="name" placeholder="请输入正确的微信账号"></input>
+      </view>
+    </view>
+  </view>
+  <button class="{{showView?'butto2':'butto'}}" bindtap='myFenXiaoWithdrawDetail'>提交申请</button>
+</view>

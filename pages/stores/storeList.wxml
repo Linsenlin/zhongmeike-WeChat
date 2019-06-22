@@ -1,0 +1,20 @@
+<!--pages/stores/storeList.wxml-->
+<view class='body'>
+  <!-- 顶部的地址显示 -->
+  <view class='address'>成都
+    <view class='addressImg'>
+      <image src='../../images/storeOne.png'></image>
+    </view>
+  </view>
+  <!-- 店铺列表 -->
+  <block wx:for="{{storeList}}" wx:key="index">
+  <view class='store' bindtap='storeDetail' data-current='{{index}}'>
+    <view class='storeImg'>
+      <image src='{{item.store_img}}'></image>
+    </view>
+    <view class='storeTitle'>{{item.store_name}}</view>
+  <view class='storeSearch'>{{item.store_keyword}}</view>
+    <view class='storeDetail'>{{item.store_distro}}</view>
+  </view>
+</block>
+</view>

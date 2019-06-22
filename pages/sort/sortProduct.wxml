@@ -1,0 +1,24 @@
+
+<!--pages/sort/sortProduct.wxml-->
+<view class='body'>
+  <!-- 头部菜单栏 -->
+  <view class='headerMenu'>
+    <view class='menu'>
+      <block wx:for="{{menu}}" wx:key="index">
+        <view class="{{currentIndex==index?'menuTextt':'menuText'}}" data-currentid='{{index}}' bindtap='checkType'>{{item}}
+          <image wx:if="{{index==1}}" src='../../images/sort5.png' ></image>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!--  产品展示区  -->
+  <block wx:for="{{goodsSortList}}" wx:key="index">
+    <view class='showPro' data-currentid='{{index}}' bindtap='orderTrue'>
+      <view class='showImg'>
+        <image src='{{item.goods_thumb_image}}'></image>
+      </view>
+      <view class='proName'>{{item.goods_name}}</view>
+      <view class='proName'>¥{{item.goods_sale_price}}</view>
+    </view>
+  </block>
+</view>

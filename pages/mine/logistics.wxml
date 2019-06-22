@@ -1,0 +1,42 @@
+<!--pages/mine/logistics.wxml-->
+<view class='body'>
+  <view class='line1'></view>
+  <view class='body_pro'>
+    <view class='body_pro_img'>
+      <image src='{{order_img_url}}'></image>
+    </view>
+    <view class='body_pro_title'>
+      <view class='title1'>{{order_title}}</view>
+      <view class='title2 '>{{goods_count}}件</view>
+    </view>
+    <view class='body_pro_title'>
+      <view class='title3'>{{order_num}}</view>
+      <view class='title4 '>订单编号</view>
+    </view>
+  </view>
+  <view class='line2'></view>
+
+  <view class='express'>
+    <view class='express_company'>
+    {{shipperCode}}
+    </view>
+  </view>
+  <view class='line1'></view>
+
+
+
+  <block wx:for="{{tracesList}}" list2-item="item" wx:for-index="ind" wx:key="index">
+    <view class='info'>
+      <view class='info_img'>
+        <view class="{{ind==0?'in2':'in'}}"></view>
+        <view class="{{ind==0?'ru1':'ru'}}"></view>
+      </view>
+      <view class='info_text'>
+        <view class="{{ind==0?'info_text_info':'info_text_info2'}}">{{item.AcceptStation}}</view>
+        <view class="{{ind==0?'info_text_time':'info_text_time2'}}">{{item.AcceptTime}} </view>
+      </view>
+    </view>
+
+  </block>
+
+</view>

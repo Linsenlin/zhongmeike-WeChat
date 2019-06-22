@@ -1,0 +1,58 @@
+<!-- pages/sort/goodsDetail.wxml -->
+<!-- banner -->
+<swiper indicator-dots="{{indicatorDots}}" auto play="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+            <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="goodsName">
+    <text>圣罗兰亮颜唇部精华霜</text>
+    <text>￥600</text>
+</view>
+<view class="goodsType">
+    <text class="goodsData">选择规格：150ml</text>
+    <view class="goodsView">
+        <view class="goodsSelect">
+            <text class="">150ml</text>
+        </view>
+        <view class="goodsSelect">
+            <text class="">300ml</text>
+        </view>
+    </view>
+</view>
+<view class="goodsInfo">
+    <view class="rich-text-wrp">
+        <rich-text nodes="{{html}}"></rich-text>
+    </view>
+</view>
+<!-- <view class="page-section">
+    <view class="page-section-title">传入html字符串</view>
+    <view class="rich-text-wrp">
+        <rich-text nodes="{{html}}"></rich-text>
+    </view>
+</view> -->
+<!-- <scroll-view scroll-y="true"> -->
+<!-- <view class="detail">
+        <text class="title">xxxx</text>
+        <text class="price">￥500</text>
+    </view>
+    <view class="separate"></view> -->
+<!-- sku选择 -->
+<!-- <text bindtap="toggleDialog">请选择购买数量</text>
+    <view class="separate"></view>
+    <text>商品评价</text>
+    <text class="text-remark">东西还可以，好评~</text>
+    <view class="separate"></view>
+    <text>商品详情</text>
+    <block wx:for-items="{{detailImg}}" wx:key="name">
+        <image class="image_detail" src="{{item}}" />
+    </block>
+    <view class="temp"></view> -->
+<!-- </scroll-view> -->
+<!-- 底部悬浮栏 -->
+<view class="detail-nav">
+    <text class="button-white">合计：￥60</text>
+    <text class="button-black" bindtap="immeBuy" formType="submit">立即购买</text>
+</view>

@@ -1,0 +1,42 @@
+<!--pages/customization/schemeOne.wxml-->
+<view class='body'>
+  <!-- 制定方案部分 -->
+  <view class='deter'>
+    <scroll-view class="scroll-view" scroll-x style="width: auto;overflow:hidden;">
+      <view id="green" class="scrollItem" wx:for="{{recommendCombo}}" wx:key="index">
+        <!-- <view class='deterOne'>方案二</view> -->
+        <view data-currentid='{{index}}' bindtap='chooseCombo'>
+          <view class="{{currentIndex==index?'deterTwo':'deterOne'}}" >
+            <view class='deterTitle '>{{item.combo_name}}</view>
+            <view class='deterDetail '>{{item.combo_desc}}</view>
+            <view class='deterPrice'>￥{{item.combo_total_price}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- <view class='deterOne'>方案二</view> -->
+  </view>
+
+  <!-- 套餐介绍部分  -->
+  <view class='scheme'>
+    <block wx:for="{{recommendCombo[currentIndex].combo_goods}}" wx:key="index" wx:for-item="item">
+      <view class='product' bindtap=' recommendComboDetail'>
+        <image src='{{item.combo_goods_thum}}'></image>
+        <view class='productTitle'>{{item.combo_goods_name}}</view>
+        <view class='productDetail'>{{item.combo_effect}}</view>
+        <view class='productPrice'>￥{{item.combo_goods_price}}</view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 进一步了解部分 -->
+  <view class='detail' bindtap='nextClick'>
+    <text>进一步了解</text>
+    <image src='../../images/come.png'></image>
+  </view>
+  <!-- 底部按钮 -->
+  <view class='footerBtn'>
+    <view class='leftBtn' bindtap='addOrderRequest'>保存定制</view>
+    <view class='rightBtn' bindtap='confirmationCustomization'>立即购买</view>
+  </view>
+</view>

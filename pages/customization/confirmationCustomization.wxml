@@ -1,0 +1,80 @@
+<!--pages/customization/confirmationCustomization.wxml-->
+<view class='body'>
+  <!-- 头部套餐信息 -->
+  <view class='topInfo'>
+    <view class='topImg'>
+      <view class='topLeft'>
+        <image src='{{combo_thumb_image}}'></image>
+      </view>
+      <view class='topRight'>
+        <view class='topTitle'>{{combo_name}} x1</view>
+        <view class='topDetail'>{{combo_desc}}</view>
+        <view class='topFooter'>
+          <view class='topMemberTwo'>
+            <text>数量：</text>
+          </view>
+          <view class='topMember' bindtap='sub'>
+            <image src='../../images/sub.png' style=' width: 20rpx; height: 22rpx;' mode='aspectFit'></image>
+          </view>
+          <view class='topMember'>{{number}}</view>
+          <view class='topMember' bindtap='add'>
+            <image src='../../images/adds.png' style=' width: 22rpx; height: 22rpx;' mode='aspectFit'></image>
+          </view>
+          <view class='topPrice'>小计：
+            <text>￥{{combo_total_price*number}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 收货地址部分 -->
+  <view class='address' bindtap='myNewAddress'>
+    <text>{{address}}</text>
+    <view wx:if="{{address=='请填写收货地址'}}" class='addressChoose'>
+      <image src='../../images/next.png'></image>
+    </view>
+  </view>
+  <!-- 独家套餐部分 -->
+  <view class='address'>
+    <text>独家套餐</text>
+  </view>
+  <view class='pro' wx:if="{{combo_goods.length==0}}">
+    <view class='proDetail'>
+      <view class='proImg'>
+        <image src='{{combo_thumb_image}}'></image>
+      </view>
+    </view>
+  </view>
+  <view class='pro' wx:if="{{combo_goods.length!=0}}">
+    <block wx:for="{{combo_goods}}" wx:for-index="index" wx:key="index">
+      <view class='proDetail'>
+        <view class='proImg'>
+          <image src='{{item.combo_goods_thum}}'></image>
+        </view>
+        <view class='proText'>{{item.combo_goods_name}}</view>
+      </view>
+    </block>
+  </view>
+  <!-- 金额统计部分 -->
+  <view class='line'></view>
+  <view class='price'>
+    <view class='priceTop'>
+      <view class='priceTopText'>商品合计:</view>
+      <view class='priceP'>￥{{combo_total_price*number}}</view>
+    </view>
+    <view class='priceTop'>
+      <view class='priceTopText'>运费:</view>
+      <view class='priceP'>￥{{freight}}</view>
+    </view>
+    <view class='pricePay'>
+      <view class='pricePayLeft'>应付金额：</view>
+      <view class='pricePayRight'>￥{{total}}</view>
+    </view>
+  </view>
+  <!-- 底部按钮 -->
+  <view class='footer'>
+    <button class='btn' bindtap='clickPay'>
+      <text>微信支付</text>
+    </button>
+  </view>
+</view>

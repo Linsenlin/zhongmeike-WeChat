@@ -1,0 +1,119 @@
+/* pages/detection/mySkin.wxss */
+
+.body {
+  background: #fff;
+  float: left;
+  border-top: 1rpx solid #ccc;
+  width: 100%;
+}
+
+.tetle {
+  float: left;
+  width: 100%;
+  height: 88rpx;
+  font-size: 30rpx;
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: bold;
+  color: #333;
+  line-height: 88rpx;
+  text-indent: 21rpx;
+}
+
+.detail {
+  float: left;
+  margin-left: 21rpx;
+  width: 665rpx;
+  height: 65rpx;
+  font-size: 24rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #666;
+  line-height: 40rpx;
+}
+
+.test {
+  margin-top: 37rpx;
+  height: 520rpx;
+  width: 100%;
+  float: left;
+}
+
+.testOne {
+  height: 239rpx;
+  width: 343rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  background: url(https://www.zhongmeike.com/upload/common/questionnaire_bg1.png)no-repeat;
+  background-size: 100% 100%;
+}
+
+.testTwo {
+  height: 239rpx;
+  width: 343rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  background: url(https://www.zhongmeike.com/upload/common/questionnaire_bg2.png)no-repeat;
+  background-size: 100% 100%;
+}
+
+.testThree {
+  height: 239rpx;
+  width: 343rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  background: url(https://www.zhongmeike.com/upload/common/questionnaire_bg3.png)no-repeat;
+  background-size: 100% 100%;
+}
+
+.testFour {
+  height: 239rpx;
+  width: 343rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  background: url(https://www.zhongmeike.com/upload/common/questionnaire_bg4.png)no-repeat;
+  background-size: 100% 100%;
+}
+
+.testText {
+  float: left;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 10%;
+  width: 75%;
+  height: 45rpx;
+  font-size: 36rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #fff;
+  line-height: 50rpx;
+}
+
+.testText text {
+  float: left;
+  margin-left: 20%;
+  height: 36rpx;
+  font-size: 24rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #fff;
+}
+
+.intoTest {
+  float: left;
+  margin-left: 30%;
+  margin-top: 9%;
+  width: 140rpx;
+  height: 48rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  line-height: 48rpx;
+  text-align: center;
+}

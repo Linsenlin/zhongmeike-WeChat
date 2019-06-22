@@ -1,0 +1,34 @@
+<!--pages/mine/myFenXiao_Order.wxml-->
+<wxs module="tutil" src="time.wxs"></wxs>
+<view class='body'>
+<block wx:for="{{distributionOrderList}}" wx:key="index">
+  <view class='body_content'  data-currentid='{{index}}' bindtap='myFenXiaoRewardList'>
+    <view class='.body_content_top'>
+      <view class='body_content_top_img '>
+        <image src='{{item.order_image}}'></image>
+      </view>
+      <view class='body_content_top_text'>
+        <view class='body_content_top_name'>{{item.order_goods_name}}</view>
+        <view class='body_content_top_number'>{{item.goods_count}}件</view>
+        <view class='body_content_top_price'>{{item.order_price}} 元</view>
+      </view>
+    </view>
+    <view class='body_view1'></view>
+    <view class='body_content_bottom'>
+      <view class='body_content_bottom_Royalty'>提成 :
+        <text> {{item.order_return_money}} </text> 元</view>
+      <view class='body_content_bottom_time'>{{tutil.formatTime(item.order_pay_time)}}</view>
+    </view>
+  </view>
+  </block>
+
+  
+
+  <view class='footer'>
+    <view class='footer1'>
+      总提成：<text>{{total_money}}</text> 元
+    </view>
+
+  </view>
+
+</view>

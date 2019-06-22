@@ -1,0 +1,87 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detection/detection",
+    "pages/customization/customization",
+    "pages/mine/mine",
+    "pages/sort/goodsDetail",
+
+    "pages/login/wxLogin",
+
+    "pages/mine/subSale",
+    "pages/stores/storeDetail",
+    "pages/customization/schemeOne",
+    "pages/sort/sort",
+    "pages/detection/mySkin",
+    "pages/detection/detectionTest",
+    "pages/detection/detectionShow",
+    "pages/mine/refundDetail",
+    "pages/common/search/search",
+    "pages/welcome/welcome",
+    "pages/register/regist",
+    "pages/mine/orderDetail",
+    "pages/mine/myNewAddress",
+    "pages/mine/save_info",
+    "pages/mine/myFenXiaomyTeam",
+    "pages/mine/myFenXiaoOrder",
+    "pages/mine/myFenXiaoQRcode",
+    "pages/mine/myFenXiaoRewardList",
+    "pages/mine/myFenXiaoRequestWithdrawal",
+    "pages/mine/rebacklist",
+    "pages/mine/logistics",
+    "pages/mine/order",
+    "pages/login/login",
+    "pages/customization/confirmationCustomization",
+    "pages/stores/storeList",
+    "pages/mine/applyForReturn",
+    "pages/mine/myDistribution",
+    "pages/sort/filter",
+    "pages/sort/sortProduct",
+    "pages/mine/memberCenters",
+    "pages/detection/takePhoto",
+    "pages/sort/orderTrue",
+    "pages/index/productD",
+    "pages/mine/aboutUs",
+    "pages/stores/newStore",
+    "pages/customization/comboDetail",
+    "pages/mine/aboutProcess"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home/tabbar/tabbar1.png",
+        "selectedIconPath": "/images/home/tabbar/tabbar_1.png"
+      },
+      {
+        "pagePath": "pages/detection/detection",
+        "text": "检测",
+        "iconPath": "/images/home/tabbar/tabbar2.png",
+        "selectedIconPath": "/images/home/tabbar/tabbar_2.png"
+      },
+      {
+        "pagePath": "pages/customization/customization",
+        "text": "定制",
+        "iconPath": "/images/home/tabbar/tabbar3.png",
+        "selectedIconPath": "/images/home/tabbar/tabbar_3.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/home/tabbar/tabbar4.png",
+        "selectedIconPath": "/images/home/tabbar/tabbar_4.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,241 @@
+/* pages/mine/memberCenters.wxss */
+
+.body {
+  background: #fff;
+}
+
+/* 头部会员信息 */
+
+.top {
+  float: left;
+  width: 100%;
+  height: 440rpx;
+  position: relative;
+}
+
+.header {
+  width: 750rpx;
+  height: 310rpx;
+  background: #191a1e;
+  position: relative;
+}
+
+.headerBg {
+  float: left;
+  width: 741rpx;
+  height: 371rpx;
+  position: absolute;
+  margin-left: 5rpx;
+  margin-top: 65rpx;
+  background: url(https://www.zhongmeike.com/upload/common/member_bg.png)no-repeat;
+  background-size: 100% 100%;
+}
+
+.headerBg image {
+  width: 741rpx;
+  height: 371rpx;
+  float: left;
+}
+
+.headerInfo {
+  float: left;
+  height: 60rpx;
+  width: 650rpx;
+  position: absolute;
+  margin-top: 65rpx;
+  margin-left: 55rpx;
+}
+
+.headerInfoOne {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+}
+
+.headerInfoOne image {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  border-radius: 50%;
+}
+
+.headerInfoText {
+  float: left;
+  margin-left: 20rpx;
+  width: 80rpx;
+  height: 60rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #333;
+  line-height: 60rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.headerGrade {
+  /* width: 268rpx; */
+  height: 40rpx;
+  background: #000;
+  border-radius: 18rpx;
+  float: left;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+}
+
+.headerGrade image {
+  height: 21rpx;
+  width: 24rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 9rpx;
+}
+
+.headerGrade text {
+  float: left;
+  width: 190rpx;
+  height: 22rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 9rpx;
+  margin-left: 10rpx;
+}
+
+.headerGradeBtn {
+  float: left;
+  /* width: 74rpx; */
+  margin-top: 9rpx;
+  margin-left: 80rpx;
+  height: 36rpx;
+  border: 1rpx solid #333;
+  border-radius: 18rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #333;
+  line-height: 36rpx;
+  background: url(https://www.zhongmeike.com/upload/common/member_bg.png)no-repeat;
+ 
+}
+
+/* 进度条 */
+
+.progressBar {
+  width: 650rpx;
+  height: 100rpx;
+  float: left;
+  margin-top: 180rpx;
+  position: absolute;
+  margin-left: 55rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #fff;
+}
+
+.bar {
+  width: 650rpx;
+  height: 25rpx;
+  float: left;
+  margin-bottom: 40rpx;
+}
+
+.textOne {
+  width: 40rpx;
+  height: 25rpx;
+  float: left;
+  margin-left: 10rpx;
+}
+
+.textTwo {
+  /* width: 150rpx; */
+  height: 25rpx;
+  float: left;
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: #fff;
+}
+
+.barOne {
+  float: left;
+  width: 310rpx;
+  height: 14rpx;
+  background: #000;
+  opacity: 0.2;
+  border-radius: 7rpx;
+  margin-top: 5rpx;
+}
+
+/* 享受优惠部分 */
+
+.discount {
+  float: left;
+  width: 710rpx;
+  height: 88rpx;
+  background: #fff;
+  box-shadow: 0rpx 0rpx 16rpx 0rpx rgba(0, 0, 0, 0.16);
+  border-radius: 44rpx;
+  margin-left: 20rpx;
+}
+
+.discountImg {
+  height: 21rpx;
+  width: 24rpx;
+  float: left;
+  margin-left: 246rpx;
+  margin-top: 33rpx;
+}
+
+.discountImg image {
+  height: 21rpx;
+  width: 24rpx;
+  float: left;
+}
+
+.discountText {
+  float: left;
+  margin-left: 10rpx;
+  width: 180rpx;
+  height: 88rpx;
+  font-size: 20rpx;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 900;
+  color: #666;
+  line-height: 88rpx;
+}
+
+/* 会员说明部分 */
+.member {
+  margin-top: 20rpx;
+  float: left;
+  width:750rpx;
+height:400rpx;
+background:#FFFFFF;
+}
+.memberTitle {
+  height: 130rpx;
+  width: 100%;
+  float: left;
+  font-size:34rpx;
+font-family:SourceHanSansSC-Medium;
+font-weight:900;
+color:#333333;
+text-indent: 20rpx;
+line-height: 130rpx;
+}
+.memberDetail {
+  float: left;
+  margin-left: 20rpx;
+  width:557rpx;
+height:55rpx;
+font-size:20rpx;
+font-family:SourceHanSansSC-Medium;
+font-weight:500;
+color:#999999;
+margin-bottom: 39rpx;
+}

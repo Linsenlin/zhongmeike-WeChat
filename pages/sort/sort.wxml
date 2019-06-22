@@ -1,0 +1,85 @@
+<!--pages/sort/sort.wxml-->
+<view class='body'>
+  <!-- 顶部测试选项 -->
+  <view class='header'>
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="{{currentIndex==index?'headerTitle1':'headerTitle2'}}" data-currentid='{{index}}' bindtap='checkType'>{{item}}</view>
+    </block>
+  </view>
+  <!-- 商品部分 -->
+  <block wx:if="{{currentIndex==0}}">
+
+    <!-- 左边的导航栏菜单 -->
+    <!-- <view class='leftMenu'>
+    <view>
+      <block wx:for="{{labelList}}" wx:key="index">
+        <view class='menu' data-currentid='{{index}}' bindtap='checkMenu'>
+          <view class="{{currentIndex2==index?'show1':'show2'}}"></view>
+          <view class='menuText'>{{item.label_name}}</view>
+        </view>
+      </block>
+      </view>
+    </view> -->
+    <view class='leftMenu'>
+      <view>
+        <view class='scroll_box'>
+          <scroll-view class="scroll-view" scroll-y style="height: auto;overflow:hidden;">
+           <view class='svNavi'>
+            <!-- <block wx:for="{{labelList}}" wx:key="index"> -->
+              <view id="green"  wx:for="{{labelList}}" wx:key="index" data-currentid='{{index}}' bindtap='checkMenu' class="{{index==currentIndex2?'scrollItem':'scrollItem1'}}"    >
+                <view class="{{currentIndex2==index?'show1':'show2'}}"></view>
+                <view class="{{index==currentIndex2?'menuText1':'menuText'}}" >{{item.label_name}}</view>
+              </view>
+            <!-- </block> -->
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 右边的商品展示区- -->
+    <view class='menuRight'>
+      <block wx:for="{{labelList}}" wx:key="index">
+
+        <view wx:if="{{item.label_id==current+1}}">
+          <view class='product'>
+            <view class='productName'>
+              <view class='leftLine'></view>
+              <view class='centerText'>{{labelList[current].label_name}} </view>
+              <view class='rightLine '></view>
+            </view>
+          </view>
+          <block wx:for="{{item.son_label}}" wx:for-item="twodata" wx:key="index ">
+            <view class='productList' data-currentid='{{index}}' bindtap='sortProduct'>
+              <view class='proImg'>
+                <image src='{{twodata.label_img}}'></image>
+              </view>
+              <view class='proText'>{{twodata.label_name}}</view>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+  </block>
+
+  <!-- 品牌部分 -->
+  <view wx:if="{{currentIndex==1}}">
+    <!-- 左边的导航栏菜单 -->
+    <view class='leftMenu'>
+      <block wx:for="{{menu2}}" wx:key="index">
+        <view  data-currentid='{{index}}' bindtap='checkMenu' class='menu' >
+          <view class="{{currentIndex2==index?'show1':'show2'}}"></view>
+          <view class='menuText'>{{item}}</view>
+        </view>
+      </block>
+    </view>
+    <!-- 右边的品牌展示区- -->
+    <view class='menuRight'>
+      <block wx:for="{{brandList}}" wx:key="index">
+        <view class='brand' data-currentid='{{index}}' bindtap='checkBrand'>
+          <image src='{{item.brand_logo}}'></image>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

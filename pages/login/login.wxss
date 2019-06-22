@@ -1,0 +1,107 @@
+
+/* 登录页面 */
+.login-contain{
+  width: 89%;
+  margin: 100rpx 40rpx;
+}
+/* 验证手机号码 */
+.tel-verify{
+  width: 92%;
+  height: 480rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 24rpx rgba(4, 0, 0, .12);
+  border-bottom: solid 2rpx #ccc;
+  margin-left: 4%;
+}
+.tvTitle{
+  padding: 40rpx 0 124rpx 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 36rpx;
+  color: #333333;
+  font-weight:900;
+}
+input{
+  width: 94%;
+  margin: 0 auto;
+  
+}
+
+.tel-input{
+  height: 54rpx;
+  margin-bottom: 88rpx;
+}
+.message-code{
+  position: relative;
+  width: 94%;
+  height: 70rpx;
+  margin: 0 auto;
+  border-bottom: solid 2rpx #ccc;
+}
+.message-code1{
+  position: relative;
+  width: 94%;
+  height: 70rpx;
+  margin: 0 auto;
+  
+ 
+}
+
+
+.message-code image{
+  width: 24rpx;
+  height: 24rpx;
+  float: left;
+  margin-left: 16rpx;
+  margin-top: 25rpx;
+  
+}
+
+.mes-input{
+  width: 80%;
+  height: 100%;  
+}
+.getVerifycode{
+  position: absolute;
+  top: 12rpx;
+  right: 12rpx;
+  padding: 0;
+  width: 140rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  text-align: center;
+  border-radius: 22rpx;
+  border: solid 2rpx #333;
+  font-size: 22rpx;
+  color: #333;
+  margin-right: 12rpx;
+  z-index: 999;
+}
+/* 确定按钮 */
+.confirm-btn{
+  margin-top: 120rpx;
+}
+.confirm1 {
+  width: 82%;
+  height: 96rpx;
+  margin: 0 auto;
+  border-radius: 48rpx;
+  background-color: #999;
+  color: #fff;
+  font-size: 36rpx;
+}
+
+.confirm2 {
+  width: 82%;
+  height: 96rpx;
+  margin: 0 auto;
+  border-radius: 48rpx;
+  background-color: #333333;
+  color: #fff;
+  font-size: 36rpx;
+}
+.line{
+  width: 750rpx;
+  height: 100rpx;
+  float: left;
+}

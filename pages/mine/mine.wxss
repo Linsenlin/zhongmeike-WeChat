@@ -1,0 +1,226 @@
+page {
+  background-color: #fafafa;
+  /* background-color: lightsalmon; */
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  float: left;
+  width: 100%;
+  background: #fafafa;
+  /* background: red; */
+  height: 100%;
+}
+
+.bg {
+  width: 750rpx;
+  height: 300rpx;
+  background: url(https://www.zhongmeike.com/upload/common/distribution_bg.png);
+  background-size: 100% 100%;
+  float: left;
+}
+
+.top {
+  float: left;
+  margin-top: 120rpx;
+  position: relative;
+  width: 680rpx;
+  margin-left: 35rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 44rpx;
+  float: left;
+  margin-left: 60rpx;
+  margin-top: 60rpx;
+}
+
+.info {
+  width: 180;
+  height: 100rpx;
+  padding-top: 60rpx;
+  margin-left: 192rpx;
+}
+
+.name {
+  color: #121212;
+  font-size: 20rpx;
+  margin-top: 15rpx;
+}
+
+.mobile {
+  color: #121212;
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+
+.level {
+  border-width: 1rpx;
+  border-style: solid;
+  border-color: #b88669;
+  border-radius: 20rpx;
+  height: 34rpx;
+  width: 56rpx;
+  text-align: center;
+  color: #b88669;
+  font-size: 20rpx;
+  position: absolute;
+  right: 70rpx;
+  line-height: 34rpx;
+  top: 94rpx;
+}
+
+.center {
+  float: left;
+  width: 100%;
+  margin-top: 22rpx;
+}
+
+.grow {
+  float: left;
+  width: 680rpx;
+  height: 110rpx;
+  border-top: 1rpx solid #eee;
+  margin-top: 41rpx;
+}
+
+.growLeft {
+  float: left;
+  margin-top: 41rpx;
+  margin-left: 20rpx;
+  width: 150rpx;
+  height: 25rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #121212;
+}
+
+.growRight {
+  margin-top: 41rpx;
+  right: 10rpx;
+  float: right;
+  width: 130rpx;
+  height: 25rpx;
+  font-size: 20rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #121212;
+}
+
+.growRight image {
+  height: 17rpx;
+  width: 10rpx;
+  float: right;
+  margin-top: 5%;
+  margin-right: 25%;
+}
+
+/* 我的订单部分 */
+
+.order {
+  float: left;
+  width: 750rpx;
+  height: 98rpx;
+  background: #fff;
+  margin-top: 20%;
+  font-size: 34rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333;
+  text-indent: 21rpx;
+  line-height: 92rpx;
+}
+
+.orderList {
+  float: left;
+  width: 750rpx;
+  height: 160rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.orderChoose {
+  width: 187rpx;
+  height: 160rpx;
+  float: left;
+  margin-bottom: 15rpx;
+}
+
+.orderChooseO {
+  width: 187rpx;
+  height: 150rpx;
+  float: left;
+  /* background: lightgoldenrodyellow; */
+}
+
+.img {
+  margin-top: 32rpx;
+  margin-left: 67rpx;
+  margin-bottom: 5%;
+  width: 52rpx;
+  height: 46rpx;
+  border-radius: 4rpx;
+  /* background: lavenderblush */
+}
+
+.imgOne {
+  margin-top: 25%;
+  margin-left: 78rpx;
+  width: 52rpx;
+  height: 46rpx;
+  border-radius: 4rpx;
+}
+
+.imgOne image {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.img image {
+  width: 52rpx;
+  height: 46rpx;
+  float: left;
+}
+
+.imgText {
+  float: left;
+  margin-top: 2%;
+  text-align: center;
+  width: 187rpx;
+  height: 25rpx;
+  font-size: 22rpx;
+  font-family: Adobe Heiti Std R;
+  font-weight: normal;
+  color: #333;
+}
+
+/* 功能部分 */
+
+.func {
+  float: left;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+
+.funcT {
+  float: left;
+  width: 100%;
+  background: #fff;
+}
+
+.line {
+  float: left;
+  width: 100%;
+  height: 1rpx;
+  background: #eee;
+}

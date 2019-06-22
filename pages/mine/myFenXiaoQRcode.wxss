@@ -1,0 +1,91 @@
+/* pages/mine/myFenXiaoQRcode.wxss */
+
+.body {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+}
+
+/* 头部的图片区 */
+.header {
+  height: 400rpx;
+  width: 750rpx;
+  float: left;
+  background: url(https://www.zhongmeike.com/scibea/mf-img/share_bg.png)no-repeat;
+  background-size: 100% 100%;
+}
+.lefeHeader {
+  float: left;
+  margin-left: -5rpx;
+ margin-top: 260rpx;
+  width:288rpx;
+height:141rpx;
+background:url(https://www.zhongmeike.com/scibea/mf-img/share_ellipse.png)no-repeat;
+background-size: 100% 100%;
+
+
+}
+.lefeHeaderTitle {
+  margin-left: 12%;
+  margin-top: 15%;
+  width: 150rpx;
+  height: 100%;
+font-size:24rpx;
+font-family:MicrosoftYaHei;
+font-weight:400;
+color:#4AD0ED;
+line-height: 42rpx;
+text-align: center;
+letter-spacing: 10rpx;
+}
+.title {
+  height: 143rpx;
+  width: 100%;
+  float: left;
+  font-size:36rpx;
+font-family:MicrosoftYaHei-Bold;
+font-weight:bold;
+color:#333333;
+line-height: 143rpx;
+letter-spacing:15rpx;
+text-align: center
+}
+.detail {
+  width:100%;
+float: left;
+text-align: center;
+margin-bottom: 89rpx;
+}
+.detailtext {
+  float: left;
+  margin-left: 15%;
+  width:503rpx;
+font-size:24rpx;
+font-family:MicrosoftYaHei;
+font-weight:400;
+color:#333333;
+line-height: 40rpx;
+}
+.body_QRcode {
+  height: 200rpx;
+  width: 100%;
+  float: left;
+  margin-bottom: 59rpx;
+}
+.body_QRcode image {
+  width: 201rpx;
+  height: 200rpx;
+  float: left;
+  margin-left: 38%
+}
+.footer {
+  float: left;
+  text-align: center;
+  width:100%;
+height:28rpx;
+font-size:28rpx;
+font-family:MicrosoftYaHei;
+font-weight:400;
+color:#333333;
+}

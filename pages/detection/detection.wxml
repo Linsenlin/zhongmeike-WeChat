@@ -1,0 +1,127 @@
+<!-- detection -->
+<wxs module="tutil" src="time.wxs"></wxs>
+<view class='body'>
+  <!-- 顶部测试选项 -->
+  <view class='header'>
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="{{currentIndex==index?'headerTitle1':'headerTitle2'}}" data-currentid='{{index}}' bindtap='checkType'>{{item}}</view>
+    </block>
+  </view>
+  <!-- 历史检测为空 -->
+  <view wx:if='{{currentIndex==1}}'>
+    <view wx:if="{{showResult.length==0}}" class='content'>
+      <image src='../../images/none.png'></image>
+      <view class='empty'>你还没有信息~</view>
+    </view>
+    <!-- 检测历史非空部分  -->
+    <block wx:for="{{showResult}}" wx:key="index">
+      <view class='show' data-currentid='{{index}}' bindtap='detectionShow'>
+        <view class='showTitle'>线下检测</view>
+        <view class='showTime'>{{tutil.formatTime1(item.test_date)}}</view>
+        <view class='showRight'>
+          <view class='showComeple'>完成</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- 智能检测部分 -->
+  <view wx:if='{{currentIndex==0}}' class='moble'>
+    <view class='topImg'>
+      <image src='../../images/detetop.png'></image>
+    </view>
+    <view class='chooseBtn'>
+      <view class='leftBtn' bindtap='mySkin'>
+        <view class='btnImg'>
+          <image src='../../images/deteFour.png' style=' width: 20rpx; height: 21rpx;' mode='aspectFit'></image>
+        </view>
+        <view class='btnText'>我的肤质</view>
+      </view>
+      <view class='rightBtn' bindtap='goPhoto'>
+        <view class='btnImg'>
+          <image src='../../images/deteFive.png' style=' width: 26rpx; height: 22rpx;' mode='aspectFit'></image>
+        </view>
+        <view class='btnRText'>拍照检测</view>
+      </view>
+    </view>
+    <!-- 我的肤质近况 -->
+    <view class="{{show?'skin1':'skin2'}}">
+      <view class='myskin'>
+        <view class='topskin'>
+          <view class='topLeft'>
+            <view class='skinTitle'>我的肤质近况：</view>
+            <view class='skinDetail'>肤质：
+              <text>{{skin_desc}}</text>
+            </view>
+            <view class='skinDetail'>问题：
+              <text>{{problem_desc}}</text>
+            </view>
+          </view>
+          <view class='topRight'>
+            <view class='skinImg'>
+              <view class='skinImgText'>
+                <view class='grace'>
+                  <view class='graceText'>{{skin_test_score}}</view>
+                  <view class='fen'>分</view>
+                </view>
+              </view>
+              <view class='skinImgDetail'>急需改善</view>
+            </view>
+          </view>
+        </view>
+        <view class='bottom'>{{tutil.formatTime(create_time)}}检测记录生成</view>
+      </view>
+    </view>
+    <!-- 智能检测-线下检测部分 -->
+    <view wx:if="{{skintestRecordList==''}}" class='downDetection'>
+      <view class='downTitle'>线下检测</view>
+      <block wx:for="{{skintestItemsList}}" wx:key="index">
+        <view class='downShow'>
+          <view class='downImg'>
+            <image src='{{item.items_img}}'></image>
+          </view>
+          <view class='downText'>{{item.items_name}}</view>
+          <view class='downDetail'>{{item.items_desc}}</view>
+        </view>
+      </block>
+      <view class='footerTip'>你还没有线下检测报告，前去线下检测体验店检测肌肤状况，智能AI检测技术，全方位检测你的肌肤，只为更了解你的肌肤。</view>
+      <view class='goto'>
+        <view class='gotoBtn' bindtap='storeList'>前去体验
+        <image src='../../images/go.png'></image>
+         <!-- <view class='icons'></view> -->
+         </view>
+       
+      </view>
+    </view>
+
+    <!-- 线下报告 -->
+    <!-- 面部解析部分 -->
+    <view wx:if="{{skintestRecordList!=''}}" class='face'>
+      <view class='faceTitle'>面部解析</view>
+      <view class='contents'>
+        <view class='left'>
+          <view class='one'></view>
+          <view class='two'>{{skintestRecordList[0].levelname}}</view>
+          <view class='one'></view>
+          <view class='two'>{{skintestRecordList[3].levelname}}</view>
+          <view class='one'></view>
+          <view class='two'>{{skintestRecordList[4].levelname}}</view>
+        </view>
+        <view class='centers'>
+          <image src='../../images/detectionFace.png'></image>
+        </view>
+        <view class='right'>
+          <view class='one'></view>
+          <view class='two'>{{skintestRecordList[2].levelname}}</view>
+          <view class='one'></view>
+          <view class='one'></view>
+          <view class='two'>{{skintestRecordList[1].levelname}}</view>
+        </view>
+      </view>
+       <view class='goto'>
+        <view class='gotoBtn' bindtap='detectionShows'>完整报告 
+         <image src='../../images/go.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
